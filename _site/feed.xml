@@ -1,101 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-18T20:35:13+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">消元示例</title><link href="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/18/003.math.html" rel="alternate" type="text/html" title="消元示例" /><published>2020-03-18T00:00:00+08:00</published><updated>2020-03-18T00:00:00+08:00</updated><id>http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/18/003.math</id><content type="html" xml:base="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/18/003.math.html">&lt;p&gt;（2014年 河南郑州高三质量预测）&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-18T20:53:40+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">消元示例</title><link href="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/18/001.math1-(3).html" rel="alternate" type="text/html" title="消元示例" /><published>2020-03-18T00:00:00+08:00</published><updated>2020-03-18T00:00:00+08:00</updated><id>http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/18/001.math1%20(3)</id><content type="html" xml:base="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/18/001.math1-(3).html">（2014年 河南郑州高三质量预测）
 
-&lt;p&gt;已知$x,y \in (-\frac{1}{2},\frac{1}{2}),m\in R$且$m \neq 0$&lt;/p&gt;
+已知$x,y \in (-\frac{1}{2},\frac{1}{2}),m\in R$且$m \neq 0$
 
-&lt;p&gt;若&lt;script type=&quot;math/tex&quot;&gt;\begin{cases}
+若$$\begin{cases}
 ln\frac{2-x}{2+x}=tanx+2m\\
 ln\frac{1-y}{1+y}=\frac{2tany}{1-tan^2y}-2m\\
-\end{cases}&lt;/script&gt;
-则  $\frac{y}{x}$：&lt;strong&gt;__&lt;/strong&gt;_.&lt;/p&gt;
+\end{cases}$$
+则  $\frac{y}{x}$：_______.
 
-&lt;h3 id=&quot;解析&quot;&gt;解析：&lt;/h3&gt;
+### 解析：
 
-&lt;ul&gt;
-  &lt;li&gt;三角变换：&lt;/li&gt;
-&lt;/ul&gt;
+* 三角变换：
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+$$\begin{cases}
 ln\frac{2-x}{2+x}=tanx+2m\\
 ln\frac{1-y}{1+y}=\tan2y-2m\\
-\end{cases}&lt;/script&gt;
+\end{cases}$$
 
-&lt;ul&gt;
-  &lt;li&gt;换元:
-设$w=2y,$原式变化为&lt;/li&gt;
-&lt;/ul&gt;
+* 换元:
+  设$w=2y,$原式变化为
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+$$\begin{cases}
 ln\frac{2-x}{2+x}=tanx+2m\\
 ln\frac{1-\frac{w}{2}}{1+\frac{w}{2}}=tanw-2m\\
-\end{cases}&lt;/script&gt;
+\end{cases}$$
 
-&lt;ul&gt;
-  &lt;li&gt;整理:&lt;/li&gt;
-&lt;/ul&gt;
+* 整理:
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+$$\begin{cases}
 ln\frac{2-x}{2+x}=tanx+2m\\
 ln\frac{2-w}{2+w}=tanw-2m\\
-\end{cases}&lt;/script&gt;
+\end{cases}$$
 
-&lt;ul&gt;
-  &lt;li&gt;变形：&lt;/li&gt;
-&lt;/ul&gt;
+* 变形：
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align*}
+
+$$\begin{align*}
 -tanx+ln\frac{2-x}{2+x}&amp;=tanw-ln\frac{2-w}{2+w}\\
 tan(-x)-(-ln\frac{2+(-x)}{2-(-x)})&amp;=tanw-ln\frac{2-w}{2+w}\\
 tan(-x)-ln(\frac{2+(-x)}{2-(-x)})^{-1}&amp;=tanw-ln\frac{2-w}{2+w}\\
-tan(-x)-ln\frac{2-(-x)}{2+(-x)}&amp;=tanw-ln\frac{2-w}{2+w}\end{align*} %]]&gt;&lt;/script&gt;
+tan(-x)-ln\frac{2-(-x)}{2+(-x)}&amp;=tanw-ln\frac{2-w}{2+w}\end{align*}$$
 
-&lt;ul&gt;
-  &lt;li&gt;易得：&lt;/li&gt;
-&lt;/ul&gt;
+* 易得：
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+
+$$\begin{align*}
 -x=w,
 \frac{y}{x}=\frac{y}{-w}=\frac{y}{-2y}=-\frac{1}{2}
-\end{align*}&lt;/script&gt;</content><author><name></name></author><summary type="html">消元示例</summary></entry><entry><title type="html">可行域思想</title><link href="http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math.html" rel="alternate" type="text/html" title="可行域思想" /><published>2020-03-18T00:00:00+08:00</published><updated>2020-03-18T00:00:00+08:00</updated><id>http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math</id><content type="html" xml:base="http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math.html">&lt;p&gt;已知函数 $ f(x)=ax+\frac{b}{x}-2 $ 在 $ [1,3] $ 上满足 $ f(x)\geqslant0 $ 恒成立，求 $ 4a+b $ 的最小值。&lt;/p&gt;
+\end{align*}$$</content><author><name></name></author><summary type="html">消元示例</summary></entry><entry><title type="html">可行域思想</title><link href="http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math1-(1).html" rel="alternate" type="text/html" title="可行域思想" /><published>2020-03-18T00:00:00+08:00</published><updated>2020-03-18T00:00:00+08:00</updated><id>http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math1%20(1)</id><content type="html" xml:base="http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math1-(1).html">已知函数 $ f(x)=ax+\frac{b}{x}-2 $ 在 $ [1,3] $ 上满足 $ f(x)\geqslant0 $ 恒成立，求 $ 4a+b $ 的最小值。
 
-&lt;p&gt;分析：类似题目，会找特殊验证 $ f(2)  \geqslant 0 \Rightarrow 2a + \frac{b}{2} -2 \geqslant 0 \Rightarrow 4a + b \geqslant 4 $ 只能算会做而已，要了解它的本质，就会对「不等式」有更深的认识。&lt;/p&gt;
+分析：类似题目，会找特殊验证 $ f(2)  \geqslant 0 \Rightarrow 2a + \frac{b}{2} -2 \geqslant 0 \Rightarrow 4a + b \geqslant 4 $ 只能算会做而已，要了解它的本质，就会对「不等式」有更深的认识。
 
-&lt;p&gt;形如本题，给定一个多项式的约束条件，去求另一种个多项式的约束条件的问题，「约束条件」能转化成具象的函数或曲线的，自然优先采纳具象分析的办法。但如果不可以，那么就要对这种问题有更深刻的理解：它给了一个约束条件时，到底意味着什么？&lt;/p&gt;
+形如本题，给定一个多项式的约束条件，去求另一种个多项式的约束条件的问题，「约束条件」能转化成具象的函数或曲线的，自然优先采纳具象分析的办法。但如果不可以，那么就要对这种问题有更深刻的理解：它给了一个约束条件时，到底意味着什么？
 
-&lt;p&gt;观察 $ ax + \frac{b}{x} $ ，发现它是典型的「平地双支逆转函数」，该函数在「a 、b」同号时，是「对勾函数」，而在「a、b」异号时，则是跟随反比例函数 $ \frac{b}{x} $ 增减性的「单调函数」。&lt;/p&gt;
+观察 $ ax + \frac{b}{x} $ ，发现它是典型的「平地双支逆转函数」，该函数在「a 、b」同号时，是「对勾函数」，而在「a、b」异号时，则是跟随反比例函数 $ \frac{b}{x} $ 增减性的「单调函数」。
 
-&lt;p&gt;在双参异号时，「平地双支逆转函数」因其「单调性」，在端点取「极值」。分类有如下两种情形（对应翠绿与深绿两个区域）。而双参同号时，则因其成为「对勾函数」之故，在 $ \sqrt{\frac{b}{a}} $ 处取极值。&lt;/p&gt;
+在双参异号时，「平地双支逆转函数」因其「单调性」，在端点取「极值」。分类有如下两种情形（对应翠绿与深绿两个区域）。而双参同号时，则因其成为「对勾函数」之故，在 $ \sqrt{\frac{b}{a}} $ 处取极值。
 
-&lt;p&gt;$ \sqrt{\frac{b}{a}} $  的讨论是困难的，为了方便研究，我们将「a」视作自变量「 $ x $ 」，将「b」视作因变量「 $ y $ 」，将「 $ x $ 」和「 $ \frac{1}{x} $ 」视为两个常参「 $ m $ 」和「 $ n $ 」。从而转化为 $ ma+nb \Rightarrow mx+ny $&lt;/p&gt;
+ $ \sqrt{\frac{b}{a}} $  的讨论是困难的，为了方便研究，我们将「a」视作自变量「 $ x $ 」，将「b」视作因变量「 $ y $ 」，将「 $ x $ 」和「 $ \frac{1}{x} $ 」视为两个常参「 $ m $ 」和「 $ n $ 」。从而转化为 $ ma+nb \Rightarrow mx+ny $ 
 
-&lt;p&gt;欲求 $ 「4a + b 」 $ 的最小值，使我们知道 $ 「a」 $ 的常参系数是「4」， $ 「b」 $ 的常参系数是「1」。它们的值，分别赋予 $ m 、n $ 就会建立与原约束条件的关系（ $ x=2 $ ）。我们知道：必然有这样的约束一条线，它在维持着【4】a + 【1】b的基本关系下，同时参与着原条件域的约束。&lt;/p&gt;
+欲求 $ 「4a + b 」 $ 的最小值，使我们知道 $ 「a」 $ 的常参系数是「4」， $ 「b」 $ 的常参系数是「1」。它们的值，分别赋予 $ m 、n $ 就会建立与原约束条件的关系（ $ x=2 $ ）。我们知道：必然有这样的约束一条线，它在维持着【4】a + 【1】b的基本关系下，同时参与着原条件域的约束。
 
-&lt;p&gt;这样一来，我们就得到了下图中 $ 2x+\frac{y}{2}-2 \geqslant 0 $ 的线，因为它是唯一满足：既维持着原条件的约束，又满足了 $ 【4】a + 【1】b $ 这一关系的，仅有的一条线。&lt;/p&gt;
+这样一来，我们就得到了下图中 $ 2x+\frac{y}{2}-2 \geqslant 0 $ 的线，因为它是唯一满足：既维持着原条件的约束，又满足了 $ 【4】a + 【1】b $ 这一关系的，仅有的一条线。
 
-&lt;p&gt;同样地，我们以 $ 【4】x + 【1】y - t $ 的待证线去校验，发现至少要与 $ 2x+\frac{y}{2}-2 = 0 $ 重合时， $ t = 4 $&lt;/p&gt;
+同样地，我们以 $ 【4】x + 【1】y - t $ 的待证线去校验，发现至少要与 $ 2x+\frac{y}{2}-2 = 0 $ 重合时， $ t = 4 $ 
 
-&lt;p&gt;这种既参与原件条，又要满足特定关系的「线」，不一定是「直线」，当它是「曲线」时，同样的「赋值过程」就是「不等式」求最值类问题解法中常用的「待定系数法」。&lt;/p&gt;
+这种既参与原件条，又要满足特定关系的「线」，不一定是「直线」，当它是「曲线」时，同样的「赋值过程」就是「不等式」求最值类问题解法中常用的「待定系数法」。 
+
 
 &lt;p align=&quot;center&quot;&gt;可行域示例&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/1.png&quot; alt=&quot;外观&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">待定系数法的理论基础</summary></entry><entry><title type="html">对数平均不等式</title><link href="http://localhost:4000/%E4%B8%8D%E7%AD%89%E5%BC%8F/2020/03/18/002.math.html" rel="alternate" type="text/html" title="对数平均不等式" /><published>2020-03-18T00:00:00+08:00</published><updated>2020-03-18T00:00:00+08:00</updated><id>http://localhost:4000/%E4%B8%8D%E7%AD%89%E5%BC%8F/2020/03/18/002.math</id><content type="html" xml:base="http://localhost:4000/%E4%B8%8D%E7%AD%89%E5%BC%8F/2020/03/18/002.math.html">&lt;p&gt;对数平均不等式并非高中课纲内容，但是近五年诸多高考题目都有围绕它的题型，有必要熟知证明过程。&lt;/p&gt;
+![外观]({{site.url}}/pics/hanshuo/1.png)</content><author><name></name></author><summary type="html">待定系数法的理论基础</summary></entry><entry><title type="html">对数平均不等式</title><link href="http://localhost:4000/%E4%B8%8D%E7%AD%89%E5%BC%8F/2020/03/18/001.math1-(2).html" rel="alternate" type="text/html" title="对数平均不等式" /><published>2020-03-18T00:00:00+08:00</published><updated>2020-03-18T00:00:00+08:00</updated><id>http://localhost:4000/%E4%B8%8D%E7%AD%89%E5%BC%8F/2020/03/18/001.math1%20(2)</id><content type="html" xml:base="http://localhost:4000/%E4%B8%8D%E7%AD%89%E5%BC%8F/2020/03/18/001.math1-(2).html">对数平均不等式并非高中课纲内容，但是近五年诸多高考题目都有围绕它的题型，有必要熟知证明过程。
 
-&lt;p&gt;当 $ a&amp;gt;0,b&amp;gt;0,且a \neq b $ 时，有：$ \sqrt{ab}&amp;lt;\frac{a-b}{\ln{a}-\ln{b}}&amp;lt;\frac{a+b}{2}. $ 
-证明：设 $ a&amp;gt;b&amp;gt;0 $&lt;/p&gt;
+ 当 $ a&gt;0,b&gt;0,且a \neq b $ 时，有：$ \sqrt{ab}&lt;\frac{a-b}{\ln{a}-\ln{b}}&lt;\frac{a+b}{2}. $ 
+证明：设 $ a&gt;b&gt;0 $ 
 
-&lt;p&gt;（1） $ \frac{a-b}{\ln a-\ln b}&amp;lt;\frac{a+b}{2} \Leftrightarrow \ln a-\ln b&amp;gt;\frac{2(a-b)}{a+b} \Leftrightarrow \ln  \frac{a}{b}&amp;gt; \frac{2( \frac{a}{b}-1)}{ \frac{a}{b}+1} \Leftrightarrow \ln x &amp;gt; \frac{2(x-1)}{x+1} (x=\frac{a}{b}&amp;gt;1) $&lt;/p&gt;
+（1） $ \frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2} \Leftrightarrow \ln a-\ln b&gt;\frac{2(a-b)}{a+b} \Leftrightarrow \ln  \frac{a}{b}&gt; \frac{2( \frac{a}{b}-1)}{ \frac{a}{b}+1} \Leftrightarrow \ln x &gt; \frac{2(x-1)}{x+1} (x=\frac{a}{b}&gt;1) $ 
 
-&lt;p&gt;构造函数 $ f(x)=\ln x-\frac{2(x-1)}{x+1}(x&amp;gt;1) $ 则 $ f’(x)=\frac{(x-1)^2}{x(x+1)^2} $ .&lt;/p&gt;
+构造函数 $ f(x)=\ln x-\frac{2(x-1)}{x+1}(x&gt;1) $ 则 $ f'(x)=\frac{(x-1)^2}{x(x+1)^2} $ .
 
-&lt;p&gt;$ \because x&amp;gt;1, \therefore f’(x)&amp;gt;0, \therefore f(x) $ 在 $ (1,+\infty) $ 上单调递增。&lt;/p&gt;
+ $ \because x&gt;1, \therefore f'(x)&gt;0, \therefore f(x) $ 在 $ (1,+\infty) $ 上单调递增。
 
-&lt;p&gt;$ \therefore f(x)&amp;gt;f(1)=0, $ 即： $ \frac{a-b}{\ln a-\ln b}&amp;lt;\frac{a+b}{2} $ 成立。&lt;/p&gt;
+ $ \therefore f(x)&gt;f(1)=0, $ 即： $ \frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2} $ 成立。
 
-&lt;p&gt;（2） $ \sqrt{ab}&amp;lt;\frac{a-b}{\ln a-\ln b}\Leftrightarrow \ln a-\ln b&amp;lt;\frac{a-b}{\sqrt{ab}} \Leftrightarrow \ln \frac{a}{b}&amp;lt;\frac{\frac{a}{b}-1}{\sqrt{\frac{a}{b}}}\Leftrightarrow 2\ln x&amp;lt;x-\frac{1}{x}(x=\sqrt{\frac{a}{b}}&amp;gt;1) $&lt;/p&gt;
+（2） $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b}\Leftrightarrow \ln a-\ln b&lt;\frac{a-b}{\sqrt{ab}} \Leftrightarrow \ln \frac{a}{b}&lt;\frac{\frac{a}{b}-1}{\sqrt{\frac{a}{b}}}\Leftrightarrow 2\ln x&lt;x-\frac{1}{x}(x=\sqrt{\frac{a}{b}}&gt;1) $ 
 
-&lt;p&gt;构造函数 $ g(x)=2\ln x-(x-\frac{1}{x})(x&amp;gt;1),$ 则 $g’(x)=-(\frac{1}{x}-1)^2 $ .&lt;/p&gt;
+构造函数 $ g(x)=2\ln x-(x-\frac{1}{x})(x&gt;1),$ 则 $g'(x)=-(\frac{1}{x}-1)^2 $ .
 
-&lt;p&gt;$ \because x&amp;gt;1,\therefore g’(x)&amp;lt;0.\therefore g(x) $ 在 $ (1,+\infty) $ 上单调递减。&lt;/p&gt;
+ $ \because x&gt;1,\therefore g'(x)&lt;0.\therefore g(x) $ 在 $ (1,+\infty) $ 上单调递减。
 
-&lt;p&gt;$ \therefore g(x)&amp;lt;g(1)=0, $ 即： $ \sqrt{ab}&amp;lt;\frac{a-b}{\ln a-\ln b} $ 成立。&lt;/p&gt;
+ $ \therefore g(x)&lt;g(1)=0, $ 即： $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b} $ 成立。
 
-&lt;p&gt;综上所述，当 $ a&amp;gt;0,b&amp;gt;0, $ 且 $ a \neq b $ 时， $ \sqrt{ab}&amp;lt;\frac{a-b}{\ln a-\ln b}&amp;lt;\frac{a+b}{2}. $&lt;/p&gt;</content><author><name></name></author><summary type="html">对数平均不等式</summary></entry></feed>
+综上所述，当 $ a&gt;0,b&gt;0, $ 且 $ a \neq b $ 时， $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2}. $</content><author><name></name></author><summary type="html">对数平均不等式</summary></entry></feed>
