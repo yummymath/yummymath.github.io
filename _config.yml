@@ -10,7 +10,6 @@ kramdown:
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
-    
 
 regenerate: true
 incremental: true
