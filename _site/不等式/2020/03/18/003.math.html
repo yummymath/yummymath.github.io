@@ -9,7 +9,7 @@
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 <link rel="stylesheet" href="/assets/css/gruvbox.dark.css">
-<title>消元示例</title>
+<title>对数平均不等式</title>
 
         
 <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
@@ -46,80 +46,43 @@
 
         <div class="content-area">
             <div class="title">
-                消元示例
+                对数平均不等式
             </div>
             <div class="category-area">
                 「
-                <a href="http://localhost:4000/tags.html#函数">
+                <a href="http://localhost:4000/tags.html#不等式">
                     <div class="category">
-                        函数
+                        不等式
                     </div>
                 </a>
                 」
             </div>
             <div class="char-counter">
-                浏览<span data-hk-page="current"> - </span>次 字数121 2020-03-18
+                浏览<span data-hk-page="current"> - </span>次 字数1111 2020-03-18
             </div>
             <div class="content">
-                <p>（2014年 河南郑州高三质量预测）</p>
+                <p>对数平均不等式并非高中课纲内容，但是近五年诸多高考题目都有围绕它的题型，有必要熟知证明过程。</p>
 
-<p>已知$x,y \in (-\frac{1}{2},\frac{1}{2}),m\in R$且$m \neq 0$</p>
+<p>当 $ a&gt;0,b&gt;0,且a \neq b $ 时，有：$ \sqrt{ab}&lt;\frac{a-b}{\ln{a}-\ln{b}}&lt;\frac{a+b}{2}. $ 
+证明：设 $ a&gt;b&gt;0 $</p>
 
-<p>若<script type="math/tex">\begin{cases}
-ln\frac{2-x}{2+x}=tanx+2m\\
-ln\frac{1-y}{1+y}=\frac{2tany}{1-tan^2y}-2m\\
-\end{cases}</script>
-则  $\frac{y}{x}$：<strong>__</strong>_.</p>
+<p>（1） $ \frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2} \Leftrightarrow \ln a-\ln b&gt;\frac{2(a-b)}{a+b} \Leftrightarrow \ln  \frac{a}{b}&gt; \frac{2( \frac{a}{b}-1)}{ \frac{a}{b}+1} \Leftrightarrow \ln x &gt; \frac{2(x-1)}{x+1} (x=\frac{a}{b}&gt;1) $</p>
 
-<h3 id="解析">解析：</h3>
+<p>构造函数 $ f(x)=\ln x-\frac{2(x-1)}{x+1}(x&gt;1) $ 则 $ f’(x)=\frac{(x-1)^2}{x(x+1)^2} $ .</p>
 
-<ul>
-  <li>三角变换：</li>
-</ul>
+<p>$ \because x&gt;1, \therefore f’(x)&gt;0, \therefore f(x) $ 在 $ (1,+\infty) $ 上单调递增。</p>
 
-<script type="math/tex; mode=display">\begin{cases}
-ln\frac{2-x}{2+x}=tanx+2m\\
-ln\frac{1-y}{1+y}=\tan2y-2m\\
-\end{cases}</script>
+<p>$ \therefore f(x)&gt;f(1)=0, $ 即： $ \frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2} $ 成立。</p>
 
-<ul>
-  <li>换元:
-设$w=2y,$原式变化为</li>
-</ul>
+<p>（2） $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b}\Leftrightarrow \ln a-\ln b&lt;\frac{a-b}{\sqrt{ab}} \Leftrightarrow \ln \frac{a}{b}&lt;\frac{\frac{a}{b}-1}{\sqrt{\frac{a}{b}}}\Leftrightarrow 2\ln x&lt;x-\frac{1}{x}(x=\sqrt{\frac{a}{b}}&gt;1) $</p>
 
-<script type="math/tex; mode=display">\begin{cases}
-ln\frac{2-x}{2+x}=tanx+2m\\
-ln\frac{1-\frac{w}{2}}{1+\frac{w}{2}}=tanw-2m\\
-\end{cases}</script>
+<p>构造函数 $ g(x)=2\ln x-(x-\frac{1}{x})(x&gt;1),$ 则 $g’(x)=-(\frac{1}{x}-1)^2 $ .</p>
 
-<ul>
-  <li>整理:</li>
-</ul>
+<p>$ \because x&gt;1,\therefore g’(x)&lt;0.\therefore g(x) $ 在 $ (1,+\infty) $ 上单调递减。</p>
 
-<script type="math/tex; mode=display">\begin{cases}
-ln\frac{2-x}{2+x}=tanx+2m\\
-ln\frac{2-w}{2+w}=tanw-2m\\
-\end{cases}</script>
+<p>$ \therefore g(x)&lt;g(1)=0, $ 即： $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b} $ 成立。</p>
 
-<ul>
-  <li>变形：</li>
-</ul>
-
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align*}
--tanx+ln\frac{2-x}{2+x}&=tanw-ln\frac{2-w}{2+w}\\
-tan(-x)-(-ln\frac{2+(-x)}{2-(-x)})&=tanw-ln\frac{2-w}{2+w}\\
-tan(-x)-ln(\frac{2+(-x)}{2-(-x)})^{-1}&=tanw-ln\frac{2-w}{2+w}\\
-tan(-x)-ln\frac{2-(-x)}{2+(-x)}&=tanw-ln\frac{2-w}{2+w}\end{align*} %]]></script>
-
-<ul>
-  <li>易得：</li>
-</ul>
-
-<script type="math/tex; mode=display">\begin{align*}
--x=w,
-\frac{y}{x}=\frac{y}{-w}=\frac{y}{-2y}=-\frac{1}{2}
-\end{align*}</script>
+<p>综上所述，当 $ a&gt;0,b&gt;0, $ 且 $ a \neq b $ 时， $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2}. $</p>
 
             </div>
         </div>
@@ -131,7 +94,7 @@ tan(-x)-ln\frac{2-(-x)}{2+(-x)}&=tanw-ln\frac{2-w}{2+w}\end{align*} %]]></script
     <div id="gitalk-container"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-
+    <script src="/js/md5.min.js"></script>
     <script>
   var gitalk = new Gitalk({
   clientID: 'dfb484c6686f8b043e46',
