@@ -1,0 +1,27 @@
+@font-face {
+    font-family: mottoFont;
+    src: url("../fonts/SCRIPTIN.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: angelinaFont;
+    src: url("../fonts/angelina.TTF") format("TrueType");
+}
+
+
+@font-face {
+    font-family: titleFont;
+    src: url("../fonts/a.woff") format("TrueType");
+}
+
+
+@font-face {
+    font-family: codeFont;
+    src: url("../fonts/SourceCodeVariable-Roman.woff") format("TrueType");
+}
+
+@font-face {
+    font-family: zgFont;
+    src: url("../fonts/98WB-0.woff") format("TrueType");
+}
+

@@ -1,0 +1,23 @@
+I"<p>对数平均不等式并非高中课纲内容，但是近五年诸多高考题目都有围绕它的题型，有必要熟知证明过程。</p>
+
+<p>当 $ a&gt;0,b&gt;0,且a \neq b $ 时，有：$ \sqrt{ab}&lt;\frac{a-b}{\ln{a}-\ln{b}}&lt;\frac{a+b}{2}. $ 
+证明：设 $ a&gt;b&gt;0 $</p>
+
+<p>（1） $ \frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2} \Leftrightarrow \ln a-\ln b&gt;\frac{2(a-b)}{a+b} \Leftrightarrow \ln  \frac{a}{b}&gt; \frac{2( \frac{a}{b}-1)}{ \frac{a}{b}+1} \Leftrightarrow \ln x &gt; \frac{2(x-1)}{x+1} (x=\frac{a}{b}&gt;1) $</p>
+
+<p>构造函数 $ f(x)=\ln x-\frac{2(x-1)}{x+1}(x&gt;1) $ 则 $ f’(x)=\frac{(x-1)^2}{x(x+1)^2} $ .</p>
+
+<p>$ \because x&gt;1, \therefore f’(x)&gt;0, \therefore f(x)在(1,+\infty) $ 上单调递增。</p>
+
+<p>$ \therefore f(x)&gt;f(1)=0, $ 即： $ \frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2} $ 成立。</p>
+
+<p>（2） $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b}\Leftrightarrow \ln a-\ln b&lt;\frac{a-b}{\sqrt{ab}} \Leftrightarrow \ln \frac{a}{b}&lt;\frac{\frac{a}{b}-1}{\sqrt{\frac{a}{b}}}\Leftrightarrow 2\ln x&lt;x-\frac{1}{x}(x=\sqrt{\frac{a}{b}}&gt;1) $</p>
+
+<p>构造函数 $ g(x)=2\ln x-(x-\frac{1}{x})(x&gt;1),$ 则 $g’(x)=-(\frac{1}{x}-1)^2 $ .</p>
+
+<p>$ \because x&gt;1,\therefore g’(x)&lt;0.\therefore g(x) $ 在 $ (1,+\infty) $ 上单调递减。</p>
+
+<p>$ \therefore g(x)&lt;g(1)=0, $ 即： $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b} $ 成立。</p>
+
+<p>综上所述，当 $ a&gt;0,b&gt;0, $ 且 $ a \neq b $ 时， $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2}. $</p>
+:ET

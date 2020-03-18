@@ -1,0 +1,104 @@
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #333333;
+  background-color: #F5F5F5;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .err {
+  color: #333333;
+  background-color: #F5F5F5;
+  font-weight: bold;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #333333;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .cp {
+  color: #8ec07c;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .nt {
+  color: #333333;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .o, .highlight .ow {
+  color: #eef1da;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .p, .highlight .pi {
+  color: #eef1da;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .gi {
+  color: #18e20d;
+  background-color: #F5F5F5;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .gd {
+  color: #333333;
+  background-color: #F5F5F5;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .gh {
+  color: #18e20d;
+  font-weight: bold;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #333333;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .kc {
+  color: #d3869b;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .kt {
+  color: #fabd2f;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .kd {
+  color: #333333;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #333333;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .si {
+  color: #49ec40;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .sr {
+  color: #18e20d;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .se {
+  color: #333333;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .nn {
+  color: #8ec07c;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .nc {
+  color: #8ec07c;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .no {
+  color: #d3869b;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .na {
+  color: #18e20d;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #d3869b;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}
+.highlight .ss {
+  color: #83a598;
+  font-family: codeFont,zgFont,"Microsoft YaHei",Menlo,Monaco,monospace;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+<script src="https://jerryz.sgp1.cdn.digitaloceanspaces.com/lib/hit-kounter/hit-kounter-lc-0.3.0.js"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<link rel="stylesheet" href="/assets/css/gruvbox.dark.css">
+<title>对数平均不等式</title>
+
+        
+<!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>
+
+        <link rel="stylesheet" href="http://localhost:4000/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="http://localhost:4000/theme/highlight.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button navigatebar-mine">
+        <a href="http://localhost:4000/index.html">数学小筑</a>
+    </div>
+    <div class="navigatebar-slogan">
+        「黄金白璧买歌笑，一醉累月轻王侯」
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/index.html">Home</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/tags.html">Tags</a>
+    </div>
+
+    <div class="navigatebar-button navigatebar-about">
+        <a href="http://localhost:4000/about.html">About</a>
+    </div>
+</div>
+
+        <div class="content-area">
+            <div class="title">
+                对数平均不等式
+            </div>
+            <div class="category-area">
+                「
+                <a href="http://localhost:4000/tags.html#Math">
+                    <div class="category">
+                        Math
+                    </div>
+                </a>
+                」
+            </div>
+            <div class="char-counter">
+                浏览<span data-hk-page="current"> - </span>次 字数1109 2020-03-18
+            </div>
+            <div class="content">
+                <p>对数平均不等式并非高中课纲内容，但是近五年诸多高考题目都有围绕它的题型，有必要熟知证明过程。</p>
+
+<p>当 $ a&gt;0,b&gt;0,且a \neq b $ 时，有：$ \sqrt{ab}&lt;\frac{a-b}{\ln{a}-\ln{b}}&lt;\frac{a+b}{2}. $ 
+证明：设 $ a&gt;b&gt;0 $</p>
+
+<p>（1） $ \frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2} \Leftrightarrow \ln a-\ln b&gt;\frac{2(a-b)}{a+b} \Leftrightarrow \ln  \frac{a}{b}&gt; \frac{2( \frac{a}{b}-1)}{ \frac{a}{b}+1} \Leftrightarrow \ln x &gt; \frac{2(x-1)}{x+1} (x=\frac{a}{b}&gt;1) $</p>
+
+<p>构造函数 $ f(x)=\ln x-\frac{2(x-1)}{x+1}(x&gt;1) $ 则 $ f’(x)=\frac{(x-1)^2}{x(x+1)^2} $ .</p>
+
+<p>$ \because x&gt;1, \therefore f’(x)&gt;0, \therefore f(x)在(1,+\infty) $ 上单调递增。</p>
+
+<p>$ \therefore f(x)&gt;f(1)=0, $ 即： $ \frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2} $ 成立。</p>
+
+<p>（2） $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b}\Leftrightarrow \ln a-\ln b&lt;\frac{a-b}{\sqrt{ab}} \Leftrightarrow \ln \frac{a}{b}&lt;\frac{\frac{a}{b}-1}{\sqrt{\frac{a}{b}}}\Leftrightarrow 2\ln x&lt;x-\frac{1}{x}(x=\sqrt{\frac{a}{b}}&gt;1) $</p>
+
+<p>构造函数 $ g(x)=2\ln x-(x-\frac{1}{x})(x&gt;1),$ 则 $g’(x)=-(\frac{1}{x}-1)^2 $ .</p>
+
+<p>$ \because x&gt;1,\therefore g’(x)&lt;0.\therefore g(x) $ 在 $ (1,+\infty) $ 上单调递减。</p>
+
+<p>$ \therefore g(x)&lt;g(1)=0, $ 即： $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b} $ 成立。</p>
+
+<p>综上所述，当 $ a&gt;0,b&gt;0, $ 且 $ a \neq b $ 时， $ \sqrt{ab}&lt;\frac{a-b}{\ln a-\ln b}&lt;\frac{a+b}{2}. $</p>
+
+            </div>
+        </div>
+
+
+<!--   gitalk       -->
+
+<div class="comment">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+    <script>
+  var gitalk = new Gitalk({
+  clientID: 'dfb484c6686f8b043e46',
+  clientSecret: 'ba367201ac9b6166891132c90d92768deb0665f9',
+  repo: 'yummymath.github.io',
+  owner: 'yummymath',
+  admin: ['yummymath'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+gitalk.render('gitalk-container')
+    </script> 
+    
+    </div>
+
+
+        <div class="nickname">
+            MathXiaoZhu
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+<script src="https://jerryz.sgp1.cdn.digitaloceanspaces.com/lib/hit-kounter/hit-kounter-lc-0.3.0.js"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<link rel="stylesheet" href="/assets/css/gruvbox.dark.css">
+<title>消元示例</title>
+
+        
+<!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>
+
+        <link rel="stylesheet" href="http://localhost:4000/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="http://localhost:4000/theme/highlight.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button navigatebar-mine">
+        <a href="http://localhost:4000/index.html">数学小筑</a>
+    </div>
+    <div class="navigatebar-slogan">
+        「黄金白璧买歌笑，一醉累月轻王侯」
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/index.html">Home</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/tags.html">Tags</a>
+    </div>
+
+    <div class="navigatebar-button navigatebar-about">
+        <a href="http://localhost:4000/about.html">About</a>
+    </div>
+</div>
+
+        <div class="content-area">
+            <div class="title">
+                消元示例
+            </div>
+            <div class="category-area">
+                「
+                <a href="http://localhost:4000/tags.html#Math">
+                    <div class="category">
+                        Math
+                    </div>
+                </a>
+                」
+            </div>
+            <div class="char-counter">
+                浏览<span data-hk-page="current"> - </span>次 字数121 2020-03-18
+            </div>
+            <div class="content">
+                <p>（2014年 河南郑州高三质量预测）</p>
+
+<p>已知$x,y \in (-\frac{1}{2},\frac{1}{2}),m\in R$且$m \neq 0$</p>
+
+<p>若<script type="math/tex">\begin{cases}
+ln\frac{2-x}{2+x}=tanx+2m\\
+ln\frac{1-y}{1+y}=\frac{2tany}{1-tan^2y}-2m\\
+\end{cases}</script>
+则  $\frac{y}{x}$：<strong>__</strong>_.</p>
+
+<h3 id="解析">解析：</h3>
+
+<ul>
+  <li>三角变换：</li>
+</ul>
+
+<script type="math/tex; mode=display">\begin{cases}
+ln\frac{2-x}{2+x}=tanx+2m\\
+ln\frac{1-y}{1+y}=\tan2y-2m\\
+\end{cases}</script>
+
+<ul>
+  <li>换元:</li>
+</ul>
+
+<p>设$w=2y,$原式变化为</p>
+
+<script type="math/tex; mode=display">\begin{cases}
+ln\frac{2-x}{2+x}=tanx+2m\\
+ln\frac{1-\frac{w}{2}}{1+\frac{w}{2}}=tanw-2m\\
+\end{cases}</script>
+
+<ul>
+  <li>整理:</li>
+</ul>
+
+<script type="math/tex; mode=display">\begin{cases}
+ln\frac{2-x}{2+x}=tanx+2m\\
+ln\frac{2-w}{2+w}=tanw-2m\\
+\end{cases}</script>
+
+<ul>
+  <li>变形：</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+-tanx+ln\frac{2-x}{2+x}&=tanw-ln\frac{2-w}{2+w}\\
+tan(-x)-(-ln\frac{2+(-x)}{2-(-x)})&=tanw-ln\frac{2-w}{2+w}\\
+tan(-x)-ln(\frac{2+(-x)}{2-(-x)})^{-1}&=tanw-ln\frac{2-w}{2+w}\\
+tan(-x)-ln\frac{2-(-x)}{2+(-x)}&=tanw-ln\frac{2-w}{2+w}\end{align*} %]]></script>
+
+<ul>
+  <li>易得：</li>
+</ul>
+
+<script type="math/tex; mode=display">\begin{align*}
+-x=w,
+\frac{y}{x}=\frac{y}{-w}=\frac{y}{-2y}=-\frac{1}{2}
+\end{align*}</script>
+
+            </div>
+        </div>
+
+
+<!--   gitalk       -->
+
+<div class="comment">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+    <script>
+  var gitalk = new Gitalk({
+  clientID: 'dfb484c6686f8b043e46',
+  clientSecret: 'ba367201ac9b6166891132c90d92768deb0665f9',
+  repo: 'yummymath.github.io',
+  owner: 'yummymath',
+  admin: ['yummymath'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+gitalk.render('gitalk-container')
+    </script> 
+    
+    </div>
+
+
+        <div class="nickname">
+            MathXiaoZhu
+        </div>
+
+    </body>
+</html>

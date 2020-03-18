@@ -1,0 +1,31 @@
+url: //yummymath.github.io/
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+    
+
+regenerate: true
+incremental: true
+gitalk:
+enable: true
+owner: yummymath
+repo: yummymath.github.io
+clientID: dfb484c6686f8b043e46
+clientSecret: ba367201ac9b6166891132c90d92768deb0665f9
+admin: yummymath
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+paginate: 50
+paginate_path: "page:num"
+
+excerpt_separator:  '<!-- more -->'

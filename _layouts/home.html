@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        {% include header.html %}
+
+        <link rel="stylesheet" href="{{site.url}}/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="{{site.url}}/styles/home.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="{{site.url}}/styles/home_mobile.css">
+    </head>
+    <body>
+        <img
+            class="cover"
+            src="{{site.url}}/pics/home/tree.jpg"/>
+        <div class="content">
+		        {{ content }}
+		         
+                {% for post in paginator.posts %}             
+                     <li class="post-line">
+                         <a
+                             class="post-title"
+                             href="{{ site.baseurl }}{{ post.url }}"
+                         >
+                             {{ post.title }}
+                         </a>
+                         <div class="post-summary">
+                             {{ post.excerpt | strip_html }}
+                         </div>
+        
+                         <div class="post-info">
+                             <div class="category-area">
+                                 {% for category in post.categories %}
+                                 <a href="{{ site.url }}/tags.html#{{ category }}">
+                                     <div class="category">
+                                         {{ category }}
+                                     </div>
+                                 </a>
+                                 {% endfor %}
+                             </div>
+                             <div class="right-info-area">
+                                 <div class="char-counter">
+                                     浏览<span data-hk-page="https:{{ post.url | prepend: site.url }}"> - </span>次 字数 {{ post.content | strip_html | strip_newlines | remove: " " | size }}
+                                 </div>
+                                 <div class="post-date">
+                                     {{ post.date | date: "%Y-%m-%d" }}
+                                 </div>
+                             </div>
+                         </div>
+                     </li>
+                {% endfor %}
+				
+				
+				
+                {% if paginator.total_pages > 1 %}
+                <div class="pagination">
+                  {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 上页</a>
+                  {% else %}
+                    <span>&laquo; 头页</span>
+                  {% endif %}
+                
+                  {% for page in (1..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                      <strong>{{ page }}</strong>
+                    {% elsif page == 1 %}
+                      <a href="{{site.url}}">{{ page }}</a>
+                    {% else %}
+                      <a href="{{site.url}}/page{{page}}">{{ page }}</a>
+                    {% endif %}
+                  {% endfor %}
+                
+                  {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下页 &raquo;</a>
+                  {% else %}
+                    <span>尾页 &raquo;</span>
+                  {% endif %}
+                </div>
+                {% endif %}
+
+
+
+            <div class="motto">
+                MathXiaoZhu
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<html>
+    <head>
+        {% include header.html %}
+        {% include mathjax.html %}
+        <link rel="stylesheet" href="{{site.url}}/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="{{site.url}}/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="{{site.url}}/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="{{site.url}}/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="{{site.url}}/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="{{site.url}}/theme/highlight.css">
+    </head>
+    <body>
+        {% include navigatebar.html %}
+        <div class="content-area">
+            <div class="title">
+                {{ page.title }}
+            </div>
+            <div class="category-area">
+                「{% for category in page.categories %}
+                <a href="{{ site.url }}/tags.html#{{ category }}">
+                    <div class="category">
+                        {{ category }}
+                    </div>
+                </a>
+                {% endfor %}」
+            </div>
+            <div class="char-counter">
+                浏览<span data-hk-page="current"> - </span>次 字数{{ page.content | strip_html | strip_newlines | remove: " " | size }} {{ page.date | date: "%Y-%m-%d" }}
+            </div>
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+
+
+<!--   gitalk       -->
+
+<div class="comment">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+    <script>
+  var gitalk = new Gitalk({
+  clientID: 'dfb484c6686f8b043e46',
+  clientSecret: 'ba367201ac9b6166891132c90d92768deb0665f9',
+  repo: 'yummymath.github.io',
+  owner: 'yummymath',
+  admin: ['yummymath'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+gitalk.render('gitalk-container')
+    </script> 
+    
+    </div>
+
+
+        <div class="nickname">
+            MathXiaoZhu
+        </div>
+
+    </body>
+</html>
