@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+<script src="https://jerryz.sgp1.cdn.digitaloceanspaces.com/lib/hit-kounter/hit-kounter-lc-0.3.0.js"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<link rel="stylesheet" href="/assets/css/gruvbox.dark.css">
+<title>数形结合</title>
+
+        
+<!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>
+
+        <link rel="stylesheet" href="http://localhost:4000/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="http://localhost:4000/theme/highlight.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button navigatebar-mine">
+        <a href="http://localhost:4000/index.html">数学小筑</a>
+    </div>
+    <div class="navigatebar-slogan">
+        「黄金白璧买歌笑，一醉累月轻王侯」
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/index.html">Home</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/tags.html">Tags</a>
+    </div>
+
+    <div class="navigatebar-button navigatebar-about">
+        <a href="http://localhost:4000/about.html">About</a>
+    </div>
+</div>
+
+        <div class="content-area">
+            <div class="title">
+                数形结合
+            </div>
+            <div class="category-area">
+                「
+                <a href="http://localhost:4000/tags.html#函数">
+                    <div class="category">
+                        函数
+                    </div>
+                </a>
+                」
+            </div>
+            <div class="char-counter">
+                浏览<span data-hk-page="current"> - </span>次 字数411 2020-03-19
+            </div>
+            <div class="content">
+                <p>（《高妙热点透析》）</p>
+
+<blockquote>
+  <p>已知当且仅当 $x\in (a,b) \cup (c,d)    (b \leqslant c)$ 时，函数 $f(x)=2x^2+x+2$ 的图象在 $g(x)= | 2x+1 |+ |x-t | $ 图象的下方，则 $b-a+d-c$ 的最大值为：__.</p>
+</blockquote>
+
+<p>分析：</p>
+
+<p>双绝对值串连处理是困难的，考虑整理不等式将含参项独立。</p>
+
+<p>去掉二次函数这一侧的「绝对值符号」并画出图象是容易的，于是原题转化为分析何种情形之下，分段的二次函数图象将位于另一侧「绝对值函数」之下简单模型。</p>
+
+<p>动态观察，易见题目中给出的  $x \in (a,b)   \cup (c,d)   (b \leqslant c)$ 是有其用意的，因为在左右移动绝对值函数时，它高于分段二次函数，除了如下图之外，其它时候区间都是连续的。</p>
+
+<p>正面剖析题目时，不要急于立刻弄清楚所有的「题设条件」，它们的联系往往在一种或多种转化之后才是「显而易见」的。</p>
+
+<p>搞崩学生的心态，是命题人的乐趣之一。</p>
+
+<p>答案：不连续的区间「长度」之和，最多是 2.</p>
+
+<p align="center">示意图</p>
+<p><img src="http://localhost:4000/pics/hanshuo/2.gif" alt="示意图" /></p>
+
+            </div>
+        </div>
+
+
+<!--   gitalk       -->
+
+<div class="comment">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script src="http://localhost:4000/assets/js/md5.min.js"></script>
+    <script>
+    const gitalk = new Gitalk({
+    clientID: 'dfb484c6686f8b043e46',
+    clientSecret: 'ba367201ac9b6166891132c90d92768deb0665f9',
+    repo: 'yummymath.github.io',
+    owner: 'yummymath',
+    admin: 'yummymath',
+    id: md5(window.location.pathname),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+})
+    gitalk.render('gitalk-container')
+    </script> 
+    
+    </div>
+
+
+        <div class="nickname">
+            MathXiaoZhu
+        </div>
+
+    </body>
+</html>
