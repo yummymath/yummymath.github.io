@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+<script src="https://jerryz.sgp1.cdn.digitaloceanspaces.com/lib/hit-kounter/hit-kounter-lc-0.3.0.js"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<link rel="stylesheet" href="/assets/css/gruvbox.dark.css">
+<title>脱水不等式</title>
+
+        
+<!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>
+
+        <link rel="stylesheet" href="http://localhost:4000/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="http://localhost:4000/theme/highlight.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button navigatebar-mine">
+        <a href="http://localhost:4000/index.html">数学小筑</a>
+    </div>
+    <div class="navigatebar-slogan">
+        「黄金白璧买歌笑，一醉累月轻王侯」
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/index.html">Home</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/tags.html">Tags</a>
+    </div>
+
+    <div class="navigatebar-button navigatebar-about">
+        <a href="http://localhost:4000/about.html">About</a>
+    </div>
+</div>
+
+        <div class="content-area">
+            <div class="title">
+                脱水不等式
+            </div>
+            <div class="category-area">
+                「
+                <a href="http://localhost:4000/tags.html#函数">
+                    <div class="category">
+                        函数
+                    </div>
+                </a>
+                」
+            </div>
+            <div class="char-counter">
+                浏览<span data-hk-page="current"> - </span>次 字数1023 2020-03-19
+            </div>
+            <div class="content">
+                <blockquote>
+
+  <p>$\forall C &lt; Min\{M,N\}$. 如果 $\frac{M}{N} &lt; 1,$ 恒有 $\frac{M}{N}&gt;\frac{M-C}{N-C}$ 。 
+倘若：$\frac{M}{N} &gt; 1,$ 则：$\frac{M}{N} &lt; \frac{M-C}{N-C}$</p>
+</blockquote>
+
+<p>简证：</p>
+
+<p>$\frac{M}{N}-\frac{M-C}{N-C}=\frac{M(N-C)-N(M-C)}{N(N-C)}=\frac{C(N-M)}{N(N-C)}$</p>
+
+<p>如果 $N&gt;M,$ 则 $\frac{M}{N}&gt;\frac{M-C}{N-C}$</p>
+
+<p>如果 $N&lt;M,$ 则 $\frac{M}{N}&lt;\frac{M-C}{N-C}$</p>
+
+<p>换言之：分子分母同时脱减相同的一个常数时，真分数越脱越小，假分数越脱越大。</p>
+
+<p align="center">示意图</p>
+<p><img src="http://localhost:4000/pics/hanshuo/01.gif" alt="01.gif" /></p>
+
+<p align="center">示意图</p>
+<p><img src="http://localhost:4000/pics/hanshuo/02.gif" alt="02.gif" /></p>
+
+<p>（2020年度广州白云区3月阶段测练，第21题，理数）</p>
+
+<blockquote>
+  <p>求证：$e^{2(\sqrt{\pi}-\sqrt{e})} &gt; (\frac{\pi+1}{e+1})^{\sqrt{e}}$</p>
+</blockquote>
+
+<p>分析：</p>
+
+<p>$\pi + 1 &gt; e + 1 ,$ 由「脱水不等式」知 : 假分数越脱越大。</p>
+
+<p>$(\frac{\pi+1}{e+1})^{\sqrt{e}}$  &lt;  $(\frac{\pi}{e})^{\sqrt{e}}$</p>
+
+<p>若能证明： $(\frac{\pi}{e})^{\sqrt{e}}$ &lt; $e^{2(\sqrt{\pi}-\sqrt{e})}$ ①</p>
+
+<p>即可通过不等式的传递性，证明命题：</p>
+
+<p>$(\frac{\pi+1}{e+1})^{\sqrt{e}}$  &lt;  $(\frac{\pi}{e})^{\sqrt{e}}$ &lt; $e^{2(\sqrt{\pi}-\sqrt{e})}$</p>
+
+<p>对 ① 两侧取对数：</p>
+
+<p>$\sqrt{e}ln(\frac{\pi}{e})=2\sqrt{e}ln(\sqrt{\frac{\pi}{e}}) &lt; 2(\sqrt{\pi}-\sqrt{e})=2\sqrt{e}(\sqrt{\frac{\pi}{e}}-1)$ ②</p>
+
+<p>整理②：</p>
+
+<p>$2\sqrt{e}ln(\sqrt{\frac{\pi}{e}}) &lt; 2\sqrt{e}(\sqrt{\frac{\pi}{e}}-1)$</p>
+
+<p>由基本放缩：$lnx&lt;x-1$ ,知：</p>
+
+<p>$ln(\sqrt{\frac{\pi}{e}})&lt;\sqrt{\frac{\pi}{e}}-1$</p>
+
+<p>易然，命题成立。</p>
+
+<p>思路已通，证明就不在话下了。</p>
+
+
+            </div>
+        </div>
+
+
+<!--   gitalk       -->
+
+<div class="comment">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script src="http://localhost:4000/assets/js/md5.min.js"></script>
+    <script>
+    const gitalk = new Gitalk({
+    clientID: 'dfb484c6686f8b043e46',
+    clientSecret: 'ba367201ac9b6166891132c90d92768deb0665f9',
+    repo: 'yummymath.github.io',
+    owner: 'yummymath',
+    admin: 'yummymath',
+    id: md5(window.location.pathname),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+})
+    gitalk.render('gitalk-container')
+    </script> 
+    
+    </div>
+
+
+        <div class="nickname">
+            MathXiaoZhu
+        </div>
+
+    </body>
+</html>

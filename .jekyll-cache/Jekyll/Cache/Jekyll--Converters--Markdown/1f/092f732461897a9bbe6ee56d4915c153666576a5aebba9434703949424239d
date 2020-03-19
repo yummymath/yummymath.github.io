@@ -1,0 +1,57 @@
+I"W<blockquote>
+
+  <p>$\forall C &lt; Min\{M,N\}$. 如果 $\frac{M}{N} &lt; 1,$ 恒有 $\frac{M}{N}&gt;\frac{M-C}{N-C}$ 。 
+倘若：$\frac{M}{N} &gt; 1,$ 则：$\frac{M}{N} &lt; \frac{M-C}{N-C}$</p>
+</blockquote>
+
+<p>简证：</p>
+
+<p>$\frac{M}{N}-\frac{M-C}{N-C}=\frac{M(N-C)-N(M-C)}{N(N-C)}=\frac{C(N-M)}{N(N-C)}$</p>
+
+<p>如果 $N&gt;M,$ 则 $\frac{M}{N}&gt;\frac{M-C}{N-C}$</p>
+
+<p>如果 $N&lt;M,$ 则 $\frac{M}{N}&lt;\frac{M-C}{N-C}$</p>
+
+<p>换言之：分子分母同时脱减相同的一个常数时，真分数越脱越小，假分数越脱越大。</p>
+
+<p align="center">示意图</p>
+<p><img src="http://localhost:4000/pics/hanshuo/01.gif" alt="01.gif" /></p>
+
+<p align="center">示意图</p>
+<p><img src="http://localhost:4000/pics/hanshuo/02.gif" alt="02.gif" /></p>
+
+<p>（2020年度广州白云区3月阶段测练，第21题，理数）</p>
+
+<blockquote>
+  <p>求证：$e^{2(\sqrt{\pi}-\sqrt{e})} &gt; (\frac{\pi+1}{e+1})^{\sqrt{e}}$</p>
+</blockquote>
+
+<p>分析：</p>
+
+<p>$\pi + 1 &gt; e + 1 ,$ 由「脱水不等式」知 : 假分数越脱越大。</p>
+
+<p>$(\frac{\pi+1}{e+1})^{\sqrt{e}}$  &lt;  $(\frac{\pi}{e})^{\sqrt{e}}$</p>
+
+<p>若能证明： $(\frac{\pi}{e})^{\sqrt{e}}$ &lt; $e^{2(\sqrt{\pi}-\sqrt{e})}$ ①</p>
+
+<p>即可通过不等式的传递性，证明命题：</p>
+
+<p>$(\frac{\pi+1}{e+1})^{\sqrt{e}}$  &lt;  $(\frac{\pi}{e})^{\sqrt{e}}$ &lt; $e^{2(\sqrt{\pi}-\sqrt{e})}$</p>
+
+<p>对 ① 两侧取对数：</p>
+
+<p>$\sqrt{e}ln(\frac{\pi}{e})=2\sqrt{e}ln(\sqrt{\frac{\pi}{e}}) &lt; 2(\sqrt{\pi}-\sqrt{e})=2\sqrt{e}(\sqrt{\frac{\pi}{e}}-1)$ ②</p>
+
+<p>整理②：</p>
+
+<p>$2\sqrt{e}ln(\sqrt{\frac{\pi}{e}}) &lt; 2\sqrt{e}(\sqrt{\frac{\pi}{e}}-1)$</p>
+
+<p>由基本放缩：$lnx&lt;x-1$ ,知：</p>
+
+<p>$ln(\sqrt{\frac{\pi}{e}})&lt;\sqrt{\frac{\pi}{e}}-1$</p>
+
+<p>易然，命题成立。</p>
+
+<p>思路已通，证明就不在话下了。</p>
+
+:ET
