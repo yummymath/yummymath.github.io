@@ -12,7 +12,7 @@ webrick:
     Access-Control-Allow-Origin: "*"
 
 regenerate: true
-incremental: true
+incremental: false
 gitalk:
 enable: true
 owner: yummymath
