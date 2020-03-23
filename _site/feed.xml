@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-23T17:18:44+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">奔驰定理</title><link href="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html" rel="alternate" type="text/html" title="奔驰定理" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math</id><content type="html" xml:base="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html">&lt;h2 id=&quot;从面积说起&quot;&gt;从面积说起&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-23T17:24:46+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">奔驰定理</title><link href="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html" rel="alternate" type="text/html" title="奔驰定理" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math</id><content type="html" xml:base="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html">&lt;h2 id=&quot;从面积说起&quot;&gt;从面积说起&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;外心&lt;/li&gt;
@@ -8,7 +8,7 @@
 
 &lt;p&gt;令外接圆的半径为 $R$ ,由此，可知「外心」及「顶点」构成的下面三份三角形中，有如下比例关系：&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_{1}:S_{2}:S_{3} = \frac{1}{2}R^2sin\alpha:\frac{1}{2}R^2sin\beta:\frac{1}{2}R^2sin\gamma=sin\alpha:sin\beta:sin\gamma=sina2A:sina2B:sin2C&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_{1}:S_{2}:S_{3} = \frac{1}{2}R^2sin\alpha:\frac{1}{2}R^2sin\beta:\frac{1}{2}R^2sin\gamma=sin\alpha:sin\beta:sin\gamma=sin2A:sin2B:sin2C&lt;/script&gt;
 
 &lt;p align=&quot;center&quot;&gt;外心到三顶点等距&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/外心.jpg&quot; alt=&quot;外心.jpg&quot; /&gt;&lt;/p&gt;
@@ -92,7 +92,7 @@
 
 &lt;p&gt;代入前文结论，得三角形四心的向量表达：&lt;/p&gt;
 
-&lt;h4 id=&quot;外心s_as_bs_csina2asina2bsin2c&quot;&gt;外心：$S_{A}:S_{B}:S_{C}=sina2A:sina2B:sin2C$&lt;/h4&gt;
+&lt;h4 id=&quot;外心s_as_bs_csin2asin2bsin2c&quot;&gt;外心：$S_{A}:S_{B}:S_{C}=sin2A:sin2B:sin2C$&lt;/h4&gt;
 
 &lt;blockquote&gt;
   &lt;script type=&quot;math/tex; mode=display&quot;&gt;sin2A*\overrightarrow{PA}+sin2B*\overrightarrow{PB}+sin2C*\overrightarrow{PC}=\overrightarrow{0}&lt;/script&gt;
