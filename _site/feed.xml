@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-21T19:27:41+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">脱水不等式</title><link href="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math.html" rel="alternate" type="text/html" title="脱水不等式" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math</id><content type="html" xml:base="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-23T17:18:44+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">奔驰定理</title><link href="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html" rel="alternate" type="text/html" title="奔驰定理" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math</id><content type="html" xml:base="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html">&lt;h2 id=&quot;从面积说起&quot;&gt;从面积说起&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;外心&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;三角形的「外心」，即是「外接圆的圆心」。据圆的定义，它到三个「顶点」的距离相等。&lt;/p&gt;
+
+&lt;p&gt;令外接圆的半径为 $R$ ,由此，可知「外心」及「顶点」构成的下面三份三角形中，有如下比例关系：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_{1}:S_{2}:S_{3} = \frac{1}{2}R^2sin\alpha:\frac{1}{2}R^2sin\beta:\frac{1}{2}R^2sin\gamma=sin\alpha:sin\beta:sin\gamma=sina2A:sina2B:sin2C&lt;/script&gt;
+
+&lt;p align=&quot;center&quot;&gt;外心到三顶点等距&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/外心.jpg&quot; alt=&quot;外心.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;内心&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;三角形的「内心」，即是「内切圆的圆心」。据切线的定义，它到「三条边」的距离为其半径，因此「内心」到「三边」等距。&lt;/p&gt;
+
+&lt;p&gt;令内切圆的半径为 $r$,由此，可知「内心」及「顶点」构成的下面三份三解开中，有如下比例关系：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_{1}:S_{2}:S_{3} = \frac{1}{2}r^{2}a:\frac{1}{2}r^{2}b:\frac{1}{2}r^{2}c=a:b:c&lt;/script&gt;
+
+&lt;p align=&quot;center&quot;&gt;内心到三边等距&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/内心.jpg&quot; alt=&quot;内心.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;重心&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;三角形的「重心」，心是三条「中线」的交点，「重心」比较特殊，如下图，易证两个红色的三角形全等。从而论证出同底（$BP$）「绿色」和「蓝色」的三角形「等高」($CI=AH$),进而论证出由「重心」和三个「顶点」构成的三份三角形，面积相等：
+&lt;script type=&quot;math/tex&quot;&gt;S_{1}:S_{2}:S_{3} = 1:1:1&lt;/script&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;重心三角形面积相等&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/重心.jpg&quot; alt=&quot;重心.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;垂心
+三解形的「垂心」，是三条「高线」的交点。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;$S_{1}$ 与 $S_{3}$ 同底，所以它们的高之比即为面积之比。&lt;/p&gt;
+
+&lt;p&gt;$\frac{S_1}{S_3}=\frac{EC}{AE}=\frac{EC·EB}{AE·EB}=\frac{\frac{EB}{AE}}{\frac{EB}{EC}}=\frac{tanA}{tanC}$&lt;/p&gt;
+
+&lt;p&gt;同理可推知：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_1:S_2:S_3=tanA:tanB:tanC&lt;/script&gt;
+
+&lt;p align=&quot;center&quot;&gt;垂心示例&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/垂心.jpg&quot; alt=&quot;垂心.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;一般化拓展&quot;&gt;一般化拓展&lt;/h2&gt;
+
+&lt;p&gt;$P$ 为 $\triangle ABC$ 中一动点，由 P 及三顶点构成的三角形面积为 $S_1,S_2,S_3$.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_{1}\overrightarrow{PA}+S_{2}\overrightarrow{PB}+S_{3}\overrightarrow{PC}=\overrightarrow{0}&lt;/script&gt;
+
+&lt;p&gt;简证：&lt;/p&gt;
+
+&lt;p&gt;作两条射线$BP，CP$，并过 $A$ 作 两道平行线交两射线于 $D，E$.&lt;/p&gt;
+
+&lt;p&gt;易见夹在平线行间的 $S_0$ 和 $S_2$ 同底且等高，面积相等。同理，$S_4$ 和 $S_3$ 面积也相等。&lt;/p&gt;
+
+&lt;p&gt;在$▱ADPE$中，由平行四边形法则，知：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\overrightarrow{PA}=\overrightarrow{PD}+\overrightarrow{PE}&lt;/script&gt;
+
+&lt;p&gt;用 $\overrightarrow{PB} $及$ \overrightarrow{PC}$ 表示 $\overrightarrow{PD}$ 与 $\overrightarrow{PE}：$&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align*}
+\overrightarrow{PA}&amp;=\overrightarrow{PD}+\overrightarrow{PE}\\
+&amp;=-\frac{|\overrightarrow{PD}|}{|\overrightarrow{PB}|}*\overrightarrow{PB}-\frac{|\overrightarrow{PE}|}{|\overrightarrow{PC}|}*\overrightarrow{PC}\\
+&amp;=-\frac{S_0}{S_1}*\overrightarrow{PB}-\frac{S_4}{S_1}*\overrightarrow{PC}\\
+&amp;=-\frac{S_2}{S_1}*\overrightarrow{PB}-\frac{S_3}{S_1}*\overrightarrow{PC}\\
+
+\end{align*} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;整理：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_{1}\overrightarrow{PA}+S_{2}\overrightarrow{PB}+S_{3}\overrightarrow{PC}=\overrightarrow{0}&lt;/script&gt;
+
+&lt;p&gt;换成易记的「顶点」对「边」的形式：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_{A}\overrightarrow{PA}+S_{B}\overrightarrow{PB}+S_{C}\overrightarrow{PC}=\overrightarrow{0}&lt;/script&gt;
+
+&lt;p align=&quot;center&quot;&gt;奔驰定理示例&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/奔驰定理.jpg&quot; alt=&quot;奔驰定理.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;代入前文结论，得三角形四心的向量表达：&lt;/p&gt;
+
+&lt;h4 id=&quot;外心s_as_bs_csina2asina2bsin2c&quot;&gt;外心：$S_{A}:S_{B}:S_{C}=sina2A:sina2B:sin2C$&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;sin2A*\overrightarrow{PA}+sin2B*\overrightarrow{PB}+sin2C*\overrightarrow{PC}=\overrightarrow{0}&lt;/script&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;内心s_as_bs_cabc&quot;&gt;内心：$S_{A}:S_{B}:S_{C}=a:b:c$&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;a\overrightarrow{PA}+b\overrightarrow{PB}+c\overrightarrow{PC}=\overrightarrow{0}&lt;/script&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;重心s_as_bs_c111&quot;&gt;重心：$S_{A}:S_{B}:S_{C}=1:1:1$&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\overrightarrow{PA}+\overrightarrow{PB}+\overrightarrow{PC}=\overrightarrow{0}&lt;/script&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;垂心s_as_bs_ctanatanbtanc&quot;&gt;垂心：$S_{A}:S_{B}:S_{C}=tanA:tanB:tanC$&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;tanA*\overrightarrow{PA}+tanB*\overrightarrow{PB}+tanC*\overrightarrow{PC}=\overrightarrow{0}&lt;/script&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">解三角形</summary></entry><entry><title type="html">脱水不等式</title><link href="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math.html" rel="alternate" type="text/html" title="脱水不等式" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math</id><content type="html" xml:base="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math.html">&lt;blockquote&gt;
 
   &lt;p&gt;$\forall C &amp;lt; Min\{M,N\}$. 如果 $\frac{M}{N} &amp;lt; 1,$ 恒有 $\frac{M}{N}&amp;gt;\frac{M-C}{N-C}$ 。 
 倘若：$\frac{M}{N} &amp;gt; 1,$ 则：$\frac{M}{N} &amp;lt; \frac{M-C}{N-C}$&lt;/p&gt;

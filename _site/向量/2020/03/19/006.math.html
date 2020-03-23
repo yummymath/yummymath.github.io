@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+<script src="https://jerryz.sgp1.cdn.digitaloceanspaces.com/lib/hit-kounter/hit-kounter-lc-0.3.0.js"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<link rel="stylesheet" href="/assets/css/gruvbox.dark.css">
+<title>奔驰定理</title>
+
+        
+<!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>
+
+        <link rel="stylesheet" href="http://localhost:4000/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="http://localhost:4000/theme/highlight.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button navigatebar-mine">
+        <a href="http://localhost:4000/index.html">数学小筑</a>
+    </div>
+    <div class="navigatebar-slogan">
+        「黄金白璧买歌笑，一醉累月轻王侯」
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/index.html">Home</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/tags.html">Tags</a>
+    </div>
+
+    <div class="navigatebar-button navigatebar-about">
+        <a href="http://localhost:4000/about.html">About</a>
+    </div>
+</div>
+
+        <div class="content-area">
+            <div class="title">
+                奔驰定理
+            </div>
+            <div class="category-area">
+                「
+                <a href="http://localhost:4000/tags.html#向量">
+                    <div class="category">
+                        向量
+                    </div>
+                </a>
+                」
+            </div>
+            <div class="char-counter">
+                浏览<span data-hk-page="current"> - </span>次 字数948 2020-03-19
+            </div>
+            <div class="content">
+                <h2 id="从面积说起">从面积说起</h2>
+
+<ul>
+  <li>外心</li>
+</ul>
+
+<p>三角形的「外心」，即是「外接圆的圆心」。据圆的定义，它到三个「顶点」的距离相等。</p>
+
+<p>令外接圆的半径为 $R$ ,由此，可知「外心」及「顶点」构成的下面三份三角形中，有如下比例关系：</p>
+
+<script type="math/tex; mode=display">S_{1}:S_{2}:S_{3} = \frac{1}{2}R^2sin\alpha:\frac{1}{2}R^2sin\beta:\frac{1}{2}R^2sin\gamma=sin\alpha:sin\beta:sin\gamma=sina2A:sina2B:sin2C</script>
+
+<p align="center">外心到三顶点等距</p>
+<p><img src="http://localhost:4000/pics/hanshuo/外心.jpg" alt="外心.jpg" /></p>
+
+<ul>
+  <li>内心</li>
+</ul>
+
+<p>三角形的「内心」，即是「内切圆的圆心」。据切线的定义，它到「三条边」的距离为其半径，因此「内心」到「三边」等距。</p>
+
+<p>令内切圆的半径为 $r$,由此，可知「内心」及「顶点」构成的下面三份三解开中，有如下比例关系：</p>
+
+<script type="math/tex; mode=display">S_{1}:S_{2}:S_{3} = \frac{1}{2}r^{2}a:\frac{1}{2}r^{2}b:\frac{1}{2}r^{2}c=a:b:c</script>
+
+<p align="center">内心到三边等距</p>
+<p><img src="http://localhost:4000/pics/hanshuo/内心.jpg" alt="内心.jpg" /></p>
+
+<ul>
+  <li>重心</li>
+</ul>
+
+<p>三角形的「重心」，心是三条「中线」的交点，「重心」比较特殊，如下图，易证两个红色的三角形全等。从而论证出同底（$BP$）「绿色」和「蓝色」的三角形「等高」($CI=AH$),进而论证出由「重心」和三个「顶点」构成的三份三角形，面积相等：
+<script type="math/tex">S_{1}:S_{2}:S_{3} = 1:1:1</script></p>
+
+<p align="center">重心三角形面积相等</p>
+<p><img src="http://localhost:4000/pics/hanshuo/重心.jpg" alt="重心.jpg" /></p>
+
+<ul>
+  <li>垂心
+三解形的「垂心」，是三条「高线」的交点。</li>
+</ul>
+
+<p>$S_{1}$ 与 $S_{3}$ 同底，所以它们的高之比即为面积之比。</p>
+
+<p>$\frac{S_1}{S_3}=\frac{EC}{AE}=\frac{EC·EB}{AE·EB}=\frac{\frac{EB}{AE}}{\frac{EB}{EC}}=\frac{tanA}{tanC}$</p>
+
+<p>同理可推知：</p>
+
+<script type="math/tex; mode=display">S_1:S_2:S_3=tanA:tanB:tanC</script>
+
+<p align="center">垂心示例</p>
+<p><img src="http://localhost:4000/pics/hanshuo/垂心.jpg" alt="垂心.jpg" /></p>
+
+<h2 id="一般化拓展">一般化拓展</h2>
+
+<p>$P$ 为 $\triangle ABC$ 中一动点，由 P 及三顶点构成的三角形面积为 $S_1,S_2,S_3$.</p>
+
+<script type="math/tex; mode=display">S_{1}\overrightarrow{PA}+S_{2}\overrightarrow{PB}+S_{3}\overrightarrow{PC}=\overrightarrow{0}</script>
+
+<p>简证：</p>
+
+<p>作两条射线$BP，CP$，并过 $A$ 作 两道平行线交两射线于 $D，E$.</p>
+
+<p>易见夹在平线行间的 $S_0$ 和 $S_2$ 同底且等高，面积相等。同理，$S_4$ 和 $S_3$ 面积也相等。</p>
+
+<p>在$▱ADPE$中，由平行四边形法则，知：</p>
+
+<script type="math/tex; mode=display">\overrightarrow{PA}=\overrightarrow{PD}+\overrightarrow{PE}</script>
+
+<p>用 $\overrightarrow{PB} $及$ \overrightarrow{PC}$ 表示 $\overrightarrow{PD}$ 与 $\overrightarrow{PE}：$</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+\overrightarrow{PA}&=\overrightarrow{PD}+\overrightarrow{PE}\\
+&=-\frac{|\overrightarrow{PD}|}{|\overrightarrow{PB}|}*\overrightarrow{PB}-\frac{|\overrightarrow{PE}|}{|\overrightarrow{PC}|}*\overrightarrow{PC}\\
+&=-\frac{S_0}{S_1}*\overrightarrow{PB}-\frac{S_4}{S_1}*\overrightarrow{PC}\\
+&=-\frac{S_2}{S_1}*\overrightarrow{PB}-\frac{S_3}{S_1}*\overrightarrow{PC}\\
+
+\end{align*} %]]></script>
+
+<p>整理：</p>
+
+<script type="math/tex; mode=display">S_{1}\overrightarrow{PA}+S_{2}\overrightarrow{PB}+S_{3}\overrightarrow{PC}=\overrightarrow{0}</script>
+
+<p>换成易记的「顶点」对「边」的形式：</p>
+
+<script type="math/tex; mode=display">S_{A}\overrightarrow{PA}+S_{B}\overrightarrow{PB}+S_{C}\overrightarrow{PC}=\overrightarrow{0}</script>
+
+<p align="center">奔驰定理示例</p>
+<p><img src="http://localhost:4000/pics/hanshuo/奔驰定理.jpg" alt="奔驰定理.jpg" /></p>
+
+<p>代入前文结论，得三角形四心的向量表达：</p>
+
+<h4 id="外心s_as_bs_csina2asina2bsin2c">外心：$S_{A}:S_{B}:S_{C}=sina2A:sina2B:sin2C$</h4>
+
+<blockquote>
+  <script type="math/tex; mode=display">sin2A*\overrightarrow{PA}+sin2B*\overrightarrow{PB}+sin2C*\overrightarrow{PC}=\overrightarrow{0}</script>
+</blockquote>
+
+<h4 id="内心s_as_bs_cabc">内心：$S_{A}:S_{B}:S_{C}=a:b:c$</h4>
+
+<blockquote>
+  <script type="math/tex; mode=display">a\overrightarrow{PA}+b\overrightarrow{PB}+c\overrightarrow{PC}=\overrightarrow{0}</script>
+</blockquote>
+
+<h4 id="重心s_as_bs_c111">重心：$S_{A}:S_{B}:S_{C}=1:1:1$</h4>
+
+<blockquote>
+  <script type="math/tex; mode=display">\overrightarrow{PA}+\overrightarrow{PB}+\overrightarrow{PC}=\overrightarrow{0}</script>
+</blockquote>
+
+<h4 id="垂心s_as_bs_ctanatanbtanc">垂心：$S_{A}:S_{B}:S_{C}=tanA:tanB:tanC$</h4>
+
+<blockquote>
+  <script type="math/tex; mode=display">tanA*\overrightarrow{PA}+tanB*\overrightarrow{PB}+tanC*\overrightarrow{PC}=\overrightarrow{0}</script>
+</blockquote>
+
+            </div>
+        </div>
+
+
+<!--   gitalk       -->
+
+<div class="comment">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script src="http://localhost:4000/assets/js/md5.min.js"></script>
+    <script>
+    const gitalk = new Gitalk({
+    clientID: 'dfb484c6686f8b043e46',
+    clientSecret: 'ba367201ac9b6166891132c90d92768deb0665f9',
+    repo: 'yummymath.github.io',
+    owner: 'yummymath',
+    admin: 'yummymath',
+    id: md5(window.location.pathname),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+})
+    gitalk.render('gitalk-container')
+    </script> 
+    
+    </div>
+
+
+        <div class="nickname">
+            MathXiaoZhu
+        </div>
+
+    </body>
+</html>
