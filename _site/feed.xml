@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-21T02:44:32+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">双曲线的旋转变换</title><link href="http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math.html" rel="alternate" type="text/html" title="双曲线的旋转变换" /><published>2020-04-20T00:00:00+08:00</published><updated>2020-04-20T00:00:00+08:00</updated><id>http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math</id><content type="html" xml:base="http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math.html">&lt;h2 id=&quot;顺时针旋转&quot;&gt;顺时针旋转&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-21T03:05:11+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">双曲线的旋转变换</title><link href="http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math.html" rel="alternate" type="text/html" title="双曲线的旋转变换" /><published>2020-04-20T00:00:00+08:00</published><updated>2020-04-20T00:00:00+08:00</updated><id>http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math</id><content type="html" xml:base="http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math.html">&lt;h2 id=&quot;顺时针旋转&quot;&gt;顺时针旋转&lt;/h2&gt;
 
 &lt;p&gt;平面直角坐标系内，任意点 $M (x_{m},y_{m})$ ,通过「&lt;strong&gt;顺时针旋转&lt;/strong&gt;」$θ$ 角，得到点 $N (x_{n},y_{n})$.
 由简单的差角公式，稍微展开即得如下坐标变换关系：&lt;/p&gt;
@@ -112,7 +112,13 @@ K_{y}= \dfrac{1}{\sqrt{e^2-1}}\\
 \end{cases} 
 \Rightarrow e_{y}= \sqrt{\dfrac{2}{1+cos{2θ}}}&lt;/script&gt;
 
-&lt;p&gt;通过上述数理解析，我们发现：只要将某个确定的「平地双支逆转函数」还原，它的「离心率」就是确定的「表达式」：&lt;/p&gt;
+&lt;p&gt;通过上述数理解析，我们发现：只要将某个确定的「平地双支逆转函数」还原，它的「离心率」就是确定的「表达式」。&lt;/p&gt;
+
+&lt;p&gt;任意「平地双支逆转函数」——必有「原型双曲线」与之对应。 $a、b$ 同号出双勾， $a、b$ 异号出普通奇函数，无论 $a、b$ 取何值，一旦它们确定了，它的「原型双曲线」的离心率便同时被确定。&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y = a \cdot x + \dfrac{b}{x}&lt;/script&gt;
+
+&lt;p&gt;但是，&lt;strong&gt;如果「平地双支逆转函数」中的 $a、b$ 未定，就需要考虑「平地双支逆转函数」是存在「两种情况」的&lt;/strong&gt;。&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
 e_{x}= \sqrt{\dfrac{2}{1-cos{2θ}}}\\
