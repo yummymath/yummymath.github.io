@@ -1,4 +1,134 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-20T19:18:34+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">齐次轮换对称式的最值原理</title><link href="http://localhost:4000/%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/2020/03/20/007.math.html" rel="alternate" type="text/html" title="齐次轮换对称式的最值原理" /><published>2020-03-20T00:00:00+08:00</published><updated>2020-03-20T00:00:00+08:00</updated><id>http://localhost:4000/%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/2020/03/20/007.math</id><content type="html" xml:base="http://localhost:4000/%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/2020/03/20/007.math.html">&lt;h2 id=&quot;齐次的必要性&quot;&gt;齐次的必要性&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-21T02:35:57+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">双曲线的旋转变换</title><link href="http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math.html" rel="alternate" type="text/html" title="双曲线的旋转变换" /><published>2020-04-20T00:00:00+08:00</published><updated>2020-04-20T00:00:00+08:00</updated><id>http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math</id><content type="html" xml:base="http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math.html">&lt;h2 id=&quot;顺时针旋转&quot;&gt;顺时针旋转&lt;/h2&gt;
+
+&lt;p&gt;平面直角坐标系内，任意点 $M (x_{m},y_{m})$ ,通过「&lt;strong&gt;顺时针旋转&lt;/strong&gt;」$θ$ 角，得到点 $N (x_{n},y_{n})$.
+由简单的差角公式，稍微展开即得如下坐标变换关系：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{cases}
+x_{n}=&amp;y_{m}\cdot sinθ + x_{m}\cdot cosθ\\
+y_{n}=&amp;y_{m}\cdot cosθ - x_{m}\cdot sinθ\\
+\end{cases} %]]&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;单位圆取点&quot;&gt;单位圆取点&lt;/h2&gt;
+
+&lt;p&gt;我们在 $y$ 轴上取 $M(0,1)$,通过「&lt;strong&gt;顺时针旋转&lt;/strong&gt;」$θ$ 角，将得到点 $N (x_{n},y_{n})$：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+x_{n}=sinθ\\
+y_{n}=cosθ\\
+\end{cases}\Rightarrow k_{ON}=\dfrac{△y}{△x}=\dfrac{cosθ}{sinθ}&lt;/script&gt;
+
+&lt;h2 id=&quot;寻找旋转角&quot;&gt;寻找旋转角&lt;/h2&gt;
+
+&lt;p&gt;平面直角坐标系内的几何图形在做刚体运动时，不改变图形的轮廓与外观。&lt;/p&gt;
+
+&lt;p&gt;双曲线通过变「&lt;strong&gt;旋转&lt;/strong&gt;」得到的新曲线若能满足「&lt;strong&gt;函数&lt;/strong&gt;」这一映射关系，那么它的「&lt;strong&gt;旋转角&lt;/strong&gt;」不是随意的。&lt;/p&gt;
+
+&lt;p&gt;它必须满足：在旋转后，原双曲线的一条「渐近线」与 $y$ 轴&lt;strong&gt;重合&lt;/strong&gt;，只有如此，才能保障对称中心一侧的图形不至于存在有一个 $x$ 对应着一个以上 $y$ 值的情况出现。&lt;/p&gt;
+
+&lt;p&gt;现在，我们已有「定见」：只要找出「&lt;strong&gt;旋转角&lt;/strong&gt;」，我们就有能力「还原」该「双曲线」。&lt;/p&gt;
+
+&lt;p&gt;根据「双曲线」的对称性，我们知道对称中心一侧的图形，它是可以被「平分」为「两半儿」的。&lt;/p&gt;
+
+&lt;p&gt;给定任意「平地双支逆转函数」：$y = a \cdot x + \dfrac{b}{x}$ ，它总有 $y=a \cdot x$ 这样一条「渐近线」。&lt;/p&gt;
+
+&lt;p&gt;那么，显而易见：&lt;/p&gt;
+
+&lt;p&gt;当「平地双支逆转函数」是如下的对勾函数时(a,b同号)：包裹住了「函数一个分支」的域，是如下着色部分，在 $y$ 轴与 $y=a \cdot x$ 之间的角。劈开一半为&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;θ=\dfrac{\pi}{4}+\dfrac{arctan{a}}{2}&lt;/script&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/yuan/t0.png&quot; alt=&quot;对勾函数&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;当「平地双支逆转函数」是普通如下的奇函数时(a,b异号)：包裹住了「函数一个分支」的域，是如下着色部分，在 $y$ 轴与 $y=a \cdot x$ 之间的角。劈开一半为：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;θ=\dfrac{\pi}{4}+\dfrac{arctan{a}}{2}&lt;/script&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/yuan/t1.png&quot; alt=&quot;普通奇函数&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;可见：只要是「平地双支逆转函数」，都满足同一个解析形式的 $θ$ :「&lt;strong&gt;顺时针最小还原角&lt;/strong&gt;」。&lt;/p&gt;
+
+&lt;p&gt;至于我们&lt;strong&gt;顺手可以得出额外的「新结论」&lt;/strong&gt;：不论焦点在何处，双曲线只要旋转成函数，必然是「平地双支逆转函数」。&lt;/p&gt;
+
+&lt;h2 id=&quot;破解离心率&quot;&gt;破解离心率&lt;/h2&gt;
+
+&lt;p&gt;当双曲线的焦点在 $x$ 轴上时，它的渐近线斜率的绝对值为 $\dfrac{b}{a}$ ;当双曲线的焦点在 $y$ 轴上时，它的渐近线斜率的绝对值为 $\dfrac{a}{b}$ ;&lt;/p&gt;
+
+&lt;p&gt;我们分层设 $K_{x}$ 为 焦点在 $x$ 轴上的渐近线斜率，$K_{y}$ 为焦点在 $y$ 轴上的渐近线斜率。&lt;/p&gt;
+
+&lt;p&gt;我们唯一的目的，就是将函数按「$θ$ 角」顺时针旋转，以复原「双曲线」，斜率的运算不涉及具体的数值，都是纯粹的角度计算。而且我们具体操作时，「旋转」的对象是「渐近线」或坐标轴。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;对勾函数情形下：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;顺时针旋转 $y$ 轴 $ → y = a \cdot x$，我们不妨在 $y$ 轴上取点 $M(0,1)$，探寻这个点的变化，如此，文章开头的工具 $M$ 点，$N$ 点 就用上了。&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;对勾函数&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/yuan/s0.png&quot; alt=&quot;对勾函数&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;当然，我们预期它落到「双曲线」的渐近线 $N$ 处，如下演示：&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;对勾函数&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/yuan/s1.gif&quot; alt=&quot;对勾函数&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;由极坐标视角下的渐近线斜率表达，易知：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+x_{n}=sinθ\\
+y_{n}=cosθ\\
+K_{y}= \dfrac{△y}{△x}
+\end{cases} 
+\Rightarrow 
+\begin{cases}
+K_{x}= \dfrac{cosθ}{sinθ}\\
+K_{x}= \sqrt{e^2-1}\\
+\end{cases} 
+\Rightarrow e_{x}= \sqrt{\dfrac{2}{1-cos{2θ}}}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;普通奇函数情形下：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;普通奇函数&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/yuan/p0.png&quot; alt=&quot;普通奇函数&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我们依然将函数顺时针旋转 $θ$ 角，同样地，我们预期它落到「双曲线」的渐近线 $N$ 处：&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;普通奇函数&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/yuan/p1.gif&quot; alt=&quot;普通奇函数&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;同理，我们会得到：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+x_{n}=sinθ\\
+y_{n}=cosθ\\
+K_{y}= \dfrac{△y}{△x}
+\end{cases} 
+\Rightarrow 
+\begin{cases}
+K_{y}= \dfrac{cosθ}{sinθ}\\
+K_{y}= \dfrac{1}{\sqrt{e^2-1}}\\
+\end{cases} 
+\Rightarrow e_{y}= \sqrt{\dfrac{2}{1+cos{2θ}}}&lt;/script&gt;
+
+&lt;p&gt;通过上述数理解析，我们发现：只要将某个确定的「平地双支逆转函数」还原，它的「离心率」就是确定的「表达式」：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+e_{x}= \sqrt{\dfrac{2}{1-cos{2θ}}}\\
+e_{y}= \sqrt{\dfrac{2}{1+cos{2θ}}}\\
+θ=\dfrac{\pi}{4}+\dfrac{arctan{a}}{2}\\
+\end{cases}&lt;/script&gt;
+
+&lt;p&gt;关于「平地双支逆转函数」的一些性质：&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;平地双支逆转函数A&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/yuan/完整-平地双支A.gif&quot; alt=&quot;平地双支逆转函数&quot; /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;平地双支逆转函数B&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/yuan/完整-平地双支B.gif&quot; alt=&quot;平地双支逆转函数&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;到此，我们彻底解决了「双曲线」的旋转问题，以及由任意的「平地双支逆转函数」还原回「双曲线」的问题。&lt;/p&gt;</content><author><name></name></author><summary type="html">双曲线的旋转变换</summary></entry><entry><title type="html">齐次轮换对称式的最值原理</title><link href="http://localhost:4000/%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/2020/03/20/007.math.html" rel="alternate" type="text/html" title="齐次轮换对称式的最值原理" /><published>2020-03-20T00:00:00+08:00</published><updated>2020-03-20T00:00:00+08:00</updated><id>http://localhost:4000/%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/2020/03/20/007.math</id><content type="html" xml:base="http://localhost:4000/%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/2020/03/20/007.math.html">&lt;h2 id=&quot;齐次的必要性&quot;&gt;齐次的必要性&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;齐次&lt;/li&gt;
