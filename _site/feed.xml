@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-23T17:24:46+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">奔驰定理</title><link href="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html" rel="alternate" type="text/html" title="奔驰定理" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math</id><content type="html" xml:base="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html">&lt;h2 id=&quot;从面积说起&quot;&gt;从面积说起&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-20T18:58:43+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">齐次轮换对称式的最值原理</title><link href="http://localhost:4000/%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/2020/03/20/007.math.html" rel="alternate" type="text/html" title="齐次轮换对称式的最值原理" /><published>2020-03-20T00:00:00+08:00</published><updated>2020-03-20T00:00:00+08:00</updated><id>http://localhost:4000/%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/2020/03/20/007.math</id><content type="html" xml:base="http://localhost:4000/%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/2020/03/20/007.math.html">&lt;h2 id=&quot;齐次的必要性&quot;&gt;齐次的必要性&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;齐次&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;很多人不明白为什么有些「不等式」题目，存在着「轮换对称」的特征时，双元或多元变量取等时，会有「最大」或「最小」值。
+而在某些时刻，这个规律似乎又失效了。其实这是一叶障目，不见泰山。&lt;/p&gt;
+
+&lt;p&gt;「齐次」在这里的「约束」，是必不要少的。非齐次的话，它们的偏导函数会因有不同的形式，以致不俱备相同的「单调性」或者甚至不俱备「单调性」，使得整个代数式无法俱备最充分的取最值特征。&lt;/p&gt;
+
+&lt;p&gt;当然，不排除使用换元替代的方法，等价得到最充分的取最值特征。不过，这就是另外一个话题了。因为有一些情况之下，某些代数式可能是具有复杂曲率变化的蝶形面，甚至是不规则曲面。&lt;/p&gt;
+
+&lt;p&gt;但是回归问题本质，如果不能得到齐次特征，就不可以&lt;strong&gt;简单使用&lt;/strong&gt;「取等」得最值的「&lt;strong&gt;简单规律&lt;/strong&gt;」。&lt;/p&gt;
+
+&lt;h2 id=&quot;偏导的几何意义&quot;&gt;偏导的几何意义&lt;/h2&gt;
+
+&lt;p&gt;依次以多元函数中的一个元为「主元」，进行「求导」，就会得到一组「导函数」。它们的主元不同，每个主元的「导函数」都是在该主元视角下的，对代数式取值的「取值影响」，它被称为「偏导数」。在数学中，这个「主元变换求导」还有另外广义的、扩展形式的「描述」——即不同「方向」下的「梯度变化」。&lt;/p&gt;
+
+&lt;p&gt;特别地，如果代数式是「齐次」、「轮换对称」的，那么它们的「偏导数」的「表达形式」将是「相同」的。&lt;/p&gt;
+
+&lt;p&gt;这样就会有「每个主元」对整体取值的影响，存在「共同变化趋势」的「简单规律」——这，就是齐次轮换对称最值条件的「简单规律」。&lt;/p&gt;
+
+&lt;p&gt;示例：&lt;/p&gt;
+
+&lt;p&gt;现有代数式 $xy$ ，试问，何时 $xy$ 取得最值？&lt;/p&gt;
+
+&lt;p&gt;令 z=xy，简单求偏导：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+z^{'}_x=y\\
+z^{'}_y=x\\
+\end{cases}\Rightarrow z_{max} \quad or \quad z_{min} \in \{（x,y）|z=x \cap z=y \}&lt;/script&gt;
+
+&lt;p&gt;因为 $z=x$ 与 $z=y$ 具有相似的解析形式，它们的单调性也是相似的。事实上，在三维空间坐标系内，可以通过刚体运动，使得两个解析式所代表的平面「重合」——这是重要的，这是「齐次轮换对称」给予我们的美妙结果。&lt;/p&gt;
+
+&lt;p&gt;三维示图：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在黄绿两个偏导面的交线的方向上，蓝色的 $xy$ 双曲抛物面取得极值。在 $x$ 轴、$y$ 轴的负方向上，因为同号，蓝色的双曲抛物面取得「双元绝对值相等」条件下的极值。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;齐次轮换对称&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/xy.gif&quot; alt=&quot;齐次轮换对称.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;著名的「均值不等式」，之所以成立的根本原因：&lt;/p&gt;
+
+&lt;p&gt;$x^2+y^2$ 所代表的「抛物面」，与 $2xy$ 代表的 「双曲抛物面」，相切与 $y=x$ 方向上。双曲抛物面「包裹」住了抛物面，从而使得「抛物面」在等元之时，永远高于「双曲抛物面」。&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;均值不等式&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/ab.gif&quot; alt=&quot;均值不等式.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+z^{'}_x=2y\\
+z^{'}_y=2x\\
+\end{cases}\Rightarrow z_{max} \quad or \quad z_{min} \in \{（x,y）|z=x \cap z=y \}&lt;/script&gt;
+
+&lt;p&gt;尤于偏导函数俱有相同的形式，以致它们必然俱有相同的单调性，从而对整体取值有相同的「影响」。
+在偏导函数指示的，相同取值之时，必然有对整体取值「最大化」或「最小化」的简单规律。&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;偏导面交线&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/a1.png&quot; alt=&quot;均值不等式a.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;偏导面交线&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/a2.png&quot; alt=&quot;均值不等式b.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我们终于从几何意义上触摸到这一类数学对象的本质，这太令人沉迷了。&lt;/p&gt;</content><author><name></name></author><summary type="html">微分方程</summary></entry><entry><title type="html">奔驰定理</title><link href="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html" rel="alternate" type="text/html" title="奔驰定理" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math</id><content type="html" xml:base="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html">&lt;h2 id=&quot;从面积说起&quot;&gt;从面积说起&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;外心&lt;/li&gt;
