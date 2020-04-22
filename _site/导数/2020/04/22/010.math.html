@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+<script src="https://jerryz.sgp1.cdn.digitaloceanspaces.com/lib/hit-kounter/hit-kounter-lc-0.3.0.js"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<link rel="stylesheet" href="/assets/css/gruvbox.dark.css">
+<title>导数三角复合题</title>
+
+        
+<!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>
+
+        <link rel="stylesheet" href="http://localhost:4000/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="http://localhost:4000/theme/highlight.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button navigatebar-mine">
+        <a href="http://localhost:4000/index.html">数学小筑</a>
+    </div>
+    <div class="navigatebar-slogan">
+        「黄金白璧买歌笑，一醉累月轻王侯」
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/index.html">Home</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/tags.html">Tags</a>
+    </div>
+
+    <div class="navigatebar-button navigatebar-about">
+        <a href="http://localhost:4000/about.html">About</a>
+    </div>
+</div>
+
+        <div class="content-area">
+            <div class="title">
+                导数三角复合题
+            </div>
+            <div class="category-area">
+                「
+                <a href="http://localhost:4000/tags.html#导数">
+                    <div class="category">
+                        导数
+                    </div>
+                </a>
+                」
+            </div>
+            <div class="char-counter">
+                浏览<span data-hk-page="current"> - </span>次 字数1235 2020-04-22
+            </div>
+            <div class="content">
+                <h4 id="超越函数">超越函数</h4>
+
+<p>超越函数的 <strong>可解析性</strong> 是有限的。用实数工具对它们进行描述时，无非：</p>
+
+<ul>
+  <li>单调性</li>
+  <li>上下界</li>
+  <li>值域分布</li>
+  <li>特殊值</li>
+</ul>
+
+<h4 id="三角函数">三角函数</h4>
+
+<p>三角函数，有自己的表示体系。而 $y=e^x$ 与 $y=ln{x}$ 则本质上是同一条线在 $y=x$ 下的对称变换。</p>
+
+<p>$y=e^x$ 与 $y=ln{x}$ 掺合在一块设计题目时，可以搞得非常复杂。因为命题人不会有太多额外的顾虑，专注于衍生图形的各种特征就可以了。</p>
+
+<p>而当三角函数被引入时，就要考虑两种不同超越函数同时满足 <strong>可解析性</strong> ，这会降低该题目的复杂度。</p>
+
+<p>因为切入点会变得更加明确，从而减少思考方面的障碍。</p>
+
+<h4 id="例题">例题</h4>
+
+<blockquote>
+  <p>已知函数 $f(x) = sinx + ax^2 - \dfrac{\pi}{3} ,(a&gt;1)$
+<br />(1). 求证：$f(x)$ 有两个零点.
+<br />(2). 求证：$f(x)$ 的两个零点 $x_1 ,\quad  x_2.$ 满足 $x_1 + x_2 + \dfrac{\pi}{3} &gt; 0$</p>
+</blockquote>
+
+<p>(1). 证明:</p>
+
+<p>探究 $f(x)$ 的单调性，对 $f(x)$ 求导：</p>
+
+<script type="math/tex; mode=display">f'(x) = cosx + 2ax ,(a>1)</script>
+
+<p>探究 $f’(x)$ 的单调性，令 $g(x)=f’(x)$，并对其求导：</p>
+
+<script type="math/tex; mode=display">g'(x)= -sinx + 2a, (a>1)</script>
+
+<p>显然：</p>
+
+<script type="math/tex; mode=display">g'(x) = -sinx + 2a > -sinx + 2 > 0</script>
+
+<p>故 $g(x)=f’(x)$ 单调递增，$f’(x)$ 至多有一个零点。</p>
+
+<p>利用零点存在定理，探究 $f’(x)$ 的零点：</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{cases}
+f'(0)&= 1 > 0 \\
+f'(- \dfrac{\pi}{4})&=-\dfrac{\sqrt{2}}{2}-\dfrac{a\pi}{2} < 0\\
+\end{cases} %]]></script>
+
+<p>故知在 $(- \dfrac{\pi}{4} , 0)$ 上，存在着 $f’(x)$ 的唯一零点，设为 $x_0$ ，有如下：</p>
+
+<p>$(-\infty , x_0)$ 上，$f’(x) &lt; 0,f(x)$ 单调递减；$(x_0 , + \infty)$ 上，$f’(x) &gt; 0,f(x)$ 单调递增。</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{cases}
+x_0 < 0\\
+f(0)= - \dfrac{\pi}{3} < 0 \\
+\end{cases} \Rightarrow f(x_0) < 0.
+
+\quad \begin{cases}
+f(\pi)&= a{\pi}^2- \dfrac{\pi}{3} > {\pi}^2- \dfrac{\pi}{3} > 0 \\
+f(-\pi)&=a{\pi}^2 - \dfrac{\pi}{3} >{\pi}^2- \dfrac{\pi}{3} > 0 \\
+\end{cases} %]]></script>
+
+<p>由零点存在定理，知在 $(-\pi , x_{0}) \quad,\quad(x_{0} , \pi)$ 上，$f(x)$ 各有一个零点,计两个零点。</p>
+
+<p>(2). 证明：</p>
+
+<p>引理：当 $x&gt;0$ 时，$x&gt;sinx $. 当 $x&lt;0$ 时，$x&lt;sinx.$</p>
+
+<p>令 $f(x) = x - sinx. $则 $f’(x) = 1 - cosx \geqslant 0 ,f(x)$ 单调递增。</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{cases}
+x \in (-\infty , 0) ，f(x) < f(0) = 0.\\
+x \in (0 , +\infty) ，f(x) > f(0) = 0. \\
+\end{cases} 
+\Rightarrow 
+\begin{cases}
+x \in (-\infty , 0) ， x < sinx.\\
+x \in (0 , +\infty) ， x > sinx.\\
+\end{cases} %]]></script>
+
+<p>令 $h(x) = x + ax^2 - \dfrac{\pi}{3} ,(a&gt;1)$</p>
+
+<p>显然，$h(x)$ 的对称轴为 $x = -\dfrac{1}{2a}$，且 $△ = 1 +  \dfrac{4a \pi}{3} &gt; 0$, $h(x)$ 存在双根，不妨设左右双根分别为 $x_3,x_4$, 即有：</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+x_3 < -\dfrac{1}{2a} < 0 < x_4 \quad \quad \quad ① %]]></script>
+
+<p align="center">$x \in (-\infty ,-\dfrac{1}{2a}) ，h(x)$ 单调递减. $x \in (-\dfrac{1}{2a},+\infty) ，h(x)$ 单调递增.$\quad \quad\quad $② </p>
+
+<p>因 $h(0) = - \dfrac{\pi}{3}，h(x_3) = 0$ 当 $ x \in (-\infty, 0),$ 且满足 $ h(x) &lt; 0$ 时, 则必有：</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{cases}
+x > -\dfrac{1}{2a} , x_3 < x\\
+x < -\dfrac{1}{2a} , x_3 < x\\
+\end{cases}
+\Rightarrow
+x_3 < x < 0 \quad \quad \quad③ %]]></script>
+
+<p>由引理知：</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{cases}
+x \in (-\infty , 0) ， h(x) < f(x).\\
+x \in (0 , +\infty) ， h(x) > f(x).\\
+\end{cases} 
+\Rightarrow 
+\begin{cases}
+x \in (-\infty , 0) ， h(x_1) - f(x_1) < 0.\\
+x \in (0 , +\infty) ， h(x_2) - f(x_2) > 0.\\
+\end{cases}
+\Rightarrow 
+\begin{cases}
+x \in (-\infty , 0) ， h(x_1) < 0.\\
+x \in (0 , +\infty) ， h(x_2) > 0.\\
+\end{cases} %]]></script>
+
+<p>由 ①，② ，③ 得：</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{cases}
+x \in (-\infty , 0) ， h(x_1) < h(x_3).\\
+x \in (0 , +\infty) ， h(x_2) > h(x_4).\\
+\end{cases}
+\Rightarrow 
+\begin{cases}
+ x_3 < x_1 < 0.\\
+ 0 < x_4 < x_2.\\
+\end{cases}
+\Rightarrow x_3 + x_4 < x_1 + x_2 %]]></script>
+
+<p>在 $x + ax^2 - \dfrac{\pi}{3} = 0$ 中，由韦达定理知：</p>
+
+<script type="math/tex; mode=display">x_3 + x_4 = - \dfrac{1}{a}</script>
+
+<p>又因 $a &gt; 1$ 时， $- \dfrac{1}{a} \in (-1,0)$, 知 ： $x_3 + x_4 = - \dfrac{1}{a} &gt; -1$ ，由不等式的传递性：</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+-1 < x_3 + x_4 < x_1 + x_2 \Rightarrow - \dfrac{\pi}{3} < -1 < x_3 + x_4 < x_1 + x_2 %]]></script>
+
+<p>即：</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+- \dfrac{\pi}{3} < x_1 + x_2 \Leftrightarrow x_1 + x_2 + \dfrac{\pi}{3} > 0 %]]></script>
+
+<p>证毕。</p>
+
+            </div>
+        </div>
+
+
+<!--   gitalk       -->
+
+<div class="comment">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script src="http://localhost:4000/assets/js/md5.min.js"></script>
+    <script>
+    const gitalk = new Gitalk({
+    clientID: 'dfb484c6686f8b043e46',
+    clientSecret: 'ba367201ac9b6166891132c90d92768deb0665f9',
+    repo: 'yummymath.github.io',
+    owner: 'yummymath',
+    admin: 'yummymath',
+    id: md5(window.location.pathname),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+})
+    gitalk.render('gitalk-container')
+    </script> 
+    
+    </div>
+
+
+        <div class="nickname">
+            MathXiaoZhu
+        </div>
+
+    </body>
+</html>

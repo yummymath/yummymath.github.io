@@ -1,4 +1,156 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-21T03:05:11+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">双曲线的旋转变换</title><link href="http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math.html" rel="alternate" type="text/html" title="双曲线的旋转变换" /><published>2020-04-20T00:00:00+08:00</published><updated>2020-04-20T00:00:00+08:00</updated><id>http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math</id><content type="html" xml:base="http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math.html">&lt;h2 id=&quot;顺时针旋转&quot;&gt;顺时针旋转&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-23T01:17:24+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">导数三角复合题</title><link href="http://localhost:4000/%E5%AF%BC%E6%95%B0/2020/04/22/010.math.html" rel="alternate" type="text/html" title="导数三角复合题" /><published>2020-04-22T00:00:00+08:00</published><updated>2020-04-22T00:00:00+08:00</updated><id>http://localhost:4000/%E5%AF%BC%E6%95%B0/2020/04/22/010.math</id><content type="html" xml:base="http://localhost:4000/%E5%AF%BC%E6%95%B0/2020/04/22/010.math.html">&lt;h4 id=&quot;超越函数&quot;&gt;超越函数&lt;/h4&gt;
+
+&lt;p&gt;超越函数的 &lt;strong&gt;可解析性&lt;/strong&gt; 是有限的。用实数工具对它们进行描述时，无非：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;单调性&lt;/li&gt;
+  &lt;li&gt;上下界&lt;/li&gt;
+  &lt;li&gt;值域分布&lt;/li&gt;
+  &lt;li&gt;特殊值&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;三角函数&quot;&gt;三角函数&lt;/h4&gt;
+
+&lt;p&gt;三角函数，有自己的表示体系。而 $y=e^x$ 与 $y=ln{x}$ 则本质上是同一条线在 $y=x$ 下的对称变换。&lt;/p&gt;
+
+&lt;p&gt;$y=e^x$ 与 $y=ln{x}$ 掺合在一块设计题目时，可以搞得非常复杂。因为命题人不会有太多额外的顾虑，专注于衍生图形的各种特征就可以了。&lt;/p&gt;
+
+&lt;p&gt;而当三角函数被引入时，就要考虑两种不同超越函数同时满足 &lt;strong&gt;可解析性&lt;/strong&gt; ，这会降低该题目的复杂度。&lt;/p&gt;
+
+&lt;p&gt;因为切入点会变得更加明确，从而减少思考方面的障碍。&lt;/p&gt;
+
+&lt;h4 id=&quot;例题&quot;&gt;例题&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;已知函数 $f(x) = sinx + ax^2 - \dfrac{\pi}{3} ,(a&amp;gt;1)$
+&lt;br /&gt;(1). 求证：$f(x)$ 有两个零点.
+&lt;br /&gt;(2). 求证：$f(x)$ 的两个零点 $x_1 ,\quad  x_2.$ 满足 $x_1 + x_2 + \dfrac{\pi}{3} &amp;gt; 0$&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(1). 证明:&lt;/p&gt;
+
+&lt;p&gt;探究 $f(x)$ 的单调性，对 $f(x)$ 求导：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f'(x) = cosx + 2ax ,(a&gt;1)&lt;/script&gt;
+
+&lt;p&gt;探究 $f’(x)$ 的单调性，令 $g(x)=f’(x)$，并对其求导：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g'(x)= -sinx + 2a, (a&gt;1)&lt;/script&gt;
+
+&lt;p&gt;显然：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g'(x) = -sinx + 2a &gt; -sinx + 2 &gt; 0&lt;/script&gt;
+
+&lt;p&gt;故 $g(x)=f’(x)$ 单调递增，$f’(x)$ 至多有一个零点。&lt;/p&gt;
+
+&lt;p&gt;利用零点存在定理，探究 $f’(x)$ 的零点：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{cases}
+f'(0)&amp;= 1 &gt; 0 \\
+f'(- \dfrac{\pi}{4})&amp;=-\dfrac{\sqrt{2}}{2}-\dfrac{a\pi}{2} &lt; 0\\
+\end{cases} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;故知在 $(- \dfrac{\pi}{4} , 0)$ 上，存在着 $f’(x)$ 的唯一零点，设为 $x_0$ ，有如下：&lt;/p&gt;
+
+&lt;p&gt;$(-\infty , x_0)$ 上，$f’(x) &amp;lt; 0,f(x)$ 单调递减；$(x_0 , + \infty)$ 上，$f’(x) &amp;gt; 0,f(x)$ 单调递增。&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{cases}
+x_0 &lt; 0\\
+f(0)= - \dfrac{\pi}{3} &lt; 0 \\
+\end{cases} \Rightarrow f(x_0) &lt; 0.
+
+\quad \begin{cases}
+f(\pi)&amp;= a{\pi}^2- \dfrac{\pi}{3} &gt; {\pi}^2- \dfrac{\pi}{3} &gt; 0 \\
+f(-\pi)&amp;=a{\pi}^2 - \dfrac{\pi}{3} &gt;{\pi}^2- \dfrac{\pi}{3} &gt; 0 \\
+\end{cases} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;由零点存在定理，知在 $(-\pi , x_{0}) \quad,\quad(x_{0} , \pi)$ 上，$f(x)$ 各有一个零点,计两个零点。&lt;/p&gt;
+
+&lt;p&gt;(2). 证明：&lt;/p&gt;
+
+&lt;p&gt;引理：当 $x&amp;gt;0$ 时，$x&amp;gt;sinx $. 当 $x&amp;lt;0$ 时，$x&amp;lt;sinx.$&lt;/p&gt;
+
+&lt;p&gt;令 $f(x) = x - sinx. $则 $f’(x) = 1 - cosx \geqslant 0 ,f(x)$ 单调递增。&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{cases}
+x \in (-\infty , 0) ，f(x) &lt; f(0) = 0.\\
+x \in (0 , +\infty) ，f(x) &gt; f(0) = 0. \\
+\end{cases} 
+\Rightarrow 
+\begin{cases}
+x \in (-\infty , 0) ， x &lt; sinx.\\
+x \in (0 , +\infty) ， x &gt; sinx.\\
+\end{cases} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;令 $h(x) = x + ax^2 - \dfrac{\pi}{3} ,(a&amp;gt;1)$&lt;/p&gt;
+
+&lt;p&gt;显然，$h(x)$ 的对称轴为 $x = -\dfrac{1}{2a}$，且 $△ = 1 +  \dfrac{4a \pi}{3} &amp;gt; 0$, $h(x)$ 存在双根，不妨设左右双根分别为 $x_3,x_4$, 即有：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+x_3 &lt; -\dfrac{1}{2a} &lt; 0 &lt; x_4 \quad \quad \quad ① %]]&gt;&lt;/script&gt;
+
+&lt;p align=&quot;center&quot;&gt;$x \in (-\infty ,-\dfrac{1}{2a}) ，h(x)$ 单调递减. $x \in (-\dfrac{1}{2a},+\infty) ，h(x)$ 单调递增.$\quad \quad\quad $② &lt;/p&gt;
+
+&lt;p&gt;因 $h(0) = - \dfrac{\pi}{3}，h(x_3) = 0$ 当 $ x \in (-\infty, 0),$ 且满足 $ h(x) &amp;lt; 0$ 时, 则必有：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{cases}
+x &gt; -\dfrac{1}{2a} , x_3 &lt; x\\
+x &lt; -\dfrac{1}{2a} , x_3 &lt; x\\
+\end{cases}
+\Rightarrow
+x_3 &lt; x &lt; 0 \quad \quad \quad③ %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;由引理知：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{cases}
+x \in (-\infty , 0) ， h(x) &lt; f(x).\\
+x \in (0 , +\infty) ， h(x) &gt; f(x).\\
+\end{cases} 
+\Rightarrow 
+\begin{cases}
+x \in (-\infty , 0) ， h(x_1) - f(x_1) &lt; 0.\\
+x \in (0 , +\infty) ， h(x_2) - f(x_2) &gt; 0.\\
+\end{cases}
+\Rightarrow 
+\begin{cases}
+x \in (-\infty , 0) ， h(x_1) &lt; 0.\\
+x \in (0 , +\infty) ， h(x_2) &gt; 0.\\
+\end{cases} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;由 ①，② ，③ 得：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{cases}
+x \in (-\infty , 0) ， h(x_1) &lt; h(x_3).\\
+x \in (0 , +\infty) ， h(x_2) &gt; h(x_4).\\
+\end{cases}
+\Rightarrow 
+\begin{cases}
+ x_3 &lt; x_1 &lt; 0.\\
+ 0 &lt; x_4 &lt; x_2.\\
+\end{cases}
+\Rightarrow x_3 + x_4 &lt; x_1 + x_2 %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;在 $x + ax^2 - \dfrac{\pi}{3} = 0$ 中，由韦达定理知：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_3 + x_4 = - \dfrac{1}{a}&lt;/script&gt;
+
+&lt;p&gt;又因 $a &amp;gt; 1$ 时， $- \dfrac{1}{a} \in (-1,0)$, 知 ： $x_3 + x_4 = - \dfrac{1}{a} &amp;gt; -1$ ，由不等式的传递性：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+-1 &lt; x_3 + x_4 &lt; x_1 + x_2 \Rightarrow - \dfrac{\pi}{3} &lt; -1 &lt; x_3 + x_4 &lt; x_1 + x_2 %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;即：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+- \dfrac{\pi}{3} &lt; x_1 + x_2 \Leftrightarrow x_1 + x_2 + \dfrac{\pi}{3} &gt; 0 %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;证毕。&lt;/p&gt;</content><author><name></name></author><summary type="html">导数题里出现了三角函数的话，基本上是送分题了</summary></entry><entry><title type="html">双曲线的旋转变换</title><link href="http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math.html" rel="alternate" type="text/html" title="双曲线的旋转变换" /><published>2020-04-20T00:00:00+08:00</published><updated>2020-04-20T00:00:00+08:00</updated><id>http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math</id><content type="html" xml:base="http://localhost:4000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/2020/04/20/008.math.html">&lt;h2 id=&quot;顺时针旋转&quot;&gt;顺时针旋转&lt;/h2&gt;
 
 &lt;p&gt;平面直角坐标系内，任意点 $M (x_{m},y_{m})$ ,通过「&lt;strong&gt;顺时针旋转&lt;/strong&gt;」$θ$ 角，得到点 $N (x_{n},y_{n})$.
 由简单的差角公式，稍微展开即得如下坐标变换关系：&lt;/p&gt;
@@ -200,7 +352,82 @@ z^{'}_y=2x\\
 &lt;p align=&quot;center&quot;&gt;偏导面交线&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/a2.png&quot; alt=&quot;均值不等式b.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;我们终于从几何意义上触摸到这一类数学对象的本质，这太令人沉迷了。&lt;/p&gt;</content><author><name></name></author><summary type="html">微分方程</summary></entry><entry><title type="html">奔驰定理</title><link href="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html" rel="alternate" type="text/html" title="奔驰定理" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math</id><content type="html" xml:base="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html">&lt;h2 id=&quot;从面积说起&quot;&gt;从面积说起&lt;/h2&gt;
+&lt;p&gt;我们终于从几何意义上触摸到这一类数学对象的本质，这太令人沉迷了。&lt;/p&gt;</content><author><name></name></author><summary type="html">微分方程</summary></entry><entry><title type="html">数形结合</title><link href="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/004.math.html" rel="alternate" type="text/html" title="数形结合" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/004.math</id><content type="html" xml:base="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/004.math.html">&lt;p&gt;（《高妙热点透析》）&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;已知当且仅当 $x\in (a,b) \cup (c,d)    (b \leqslant c)$ 时，函数 $f(x)=2x^2+x+2$ 的图象在 $g(x)= | 2x+1 |+ |x-t | $ 图象的下方，则 $b-a+d-c$ 的最大值为：__.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;分析：&lt;/p&gt;
+
+&lt;p&gt;双绝对值串连处理是困难的，考虑整理不等式将含参项独立。&lt;/p&gt;
+
+&lt;p&gt;去掉二次函数这一侧的「绝对值符号」并画出图象是容易的，于是原题转化为分析何种情形之下，分段的二次函数图象将位于另一侧「绝对值函数」之下简单模型。&lt;/p&gt;
+
+&lt;p&gt;动态观察，易见题目中给出的  $x \in (a,b)   \cup (c,d)   (b \leqslant c)$ 是有其用意的，因为在左右移动绝对值函数时，它高于分段二次函数，除了如下图之外，其它时候区间都是连续的。&lt;/p&gt;
+
+&lt;p&gt;正面剖析题目时，不要急于立刻弄清楚所有的「题设条件」，它们的联系往往在一种或多种转化之后才是「显而易见」的。&lt;/p&gt;
+
+&lt;p&gt;搞崩学生的心态，是命题人的乐趣之一。&lt;/p&gt;
+
+&lt;p&gt;答案：不连续的区间「长度」之和，最多是 2.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;示意图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/2.gif&quot; alt=&quot;示意图&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">数形结合</summary></entry><entry><title type="html">脱水不等式</title><link href="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math.html" rel="alternate" type="text/html" title="脱水不等式" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math</id><content type="html" xml:base="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math.html">&lt;blockquote&gt;
+
+  &lt;p&gt;$\forall C &amp;lt; Min\{M,N\}$. 如果 $\frac{M}{N} &amp;lt; 1,$ 恒有 $\frac{M}{N}&amp;gt;\frac{M-C}{N-C}$ 。 
+倘若：$\frac{M}{N} &amp;gt; 1,$ 则：$\frac{M}{N} &amp;lt; \frac{M-C}{N-C}$&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;简证：&lt;/p&gt;
+
+&lt;p&gt;$\frac{M}{N}-\frac{M-C}{N-C}=\frac{M(N-C)-N(M-C)}{N(N-C)}=\frac{C(N-M)}{N(N-C)}$&lt;/p&gt;
+
+&lt;p&gt;如果 $N&amp;gt;M,$ 则 $\frac{M}{N}&amp;gt;\frac{M-C}{N-C}$&lt;/p&gt;
+
+&lt;p&gt;如果 $N&amp;lt;M,$ 则 $\frac{M}{N}&amp;lt;\frac{M-C}{N-C}$&lt;/p&gt;
+
+&lt;p&gt;换言之：分子分母同时脱减相同的一个常数时，真分数越脱越小，假分数越脱越大。&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;示意图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/01.gif&quot; alt=&quot;01.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;示意图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/02.gif&quot; alt=&quot;02.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;（2020年度广州白云区3月阶段测练，第21题，理数）&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;求证：$e^{2(\sqrt{\pi}-\sqrt{e})} &amp;gt; (\frac{\pi+1}{e+1})^{\sqrt{e}}$&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;分析：&lt;/p&gt;
+
+&lt;p&gt;$\pi + 1 &amp;gt; e + 1 ,$ 由「脱水不等式」知 : 假分数越脱越大。&lt;/p&gt;
+
+&lt;p&gt;$(\frac{\pi+1}{e+1})^{\sqrt{e}}$  &amp;lt;  $(\frac{\pi}{e})^{\sqrt{e}}$&lt;/p&gt;
+
+&lt;p&gt;若能证明： $(\frac{\pi}{e})^{\sqrt{e}}$ &amp;lt; $e^{2(\sqrt{\pi}-\sqrt{e})}$ ①&lt;/p&gt;
+
+&lt;p&gt;即可通过不等式的传递性，证明命题：&lt;/p&gt;
+
+&lt;p&gt;$(\frac{\pi+1}{e+1})^{\sqrt{e}}$  &amp;lt;  $(\frac{\pi}{e})^{\sqrt{e}}$ &amp;lt; $e^{2(\sqrt{\pi}-\sqrt{e})}$&lt;/p&gt;
+
+&lt;p&gt;对 ① 两侧取对数：&lt;/p&gt;
+
+&lt;p&gt;$\sqrt{e}ln(\frac{\pi}{e})=2\sqrt{e}ln(\sqrt{\frac{\pi}{e}}) &amp;lt; 2(\sqrt{\pi}-\sqrt{e})=2\sqrt{e}(\sqrt{\frac{\pi}{e}}-1)$ ②&lt;/p&gt;
+
+&lt;p&gt;整理②：&lt;/p&gt;
+
+&lt;p&gt;$2\sqrt{e}ln(\sqrt{\frac{\pi}{e}}) &amp;lt; 2\sqrt{e}(\sqrt{\frac{\pi}{e}}-1)$&lt;/p&gt;
+
+&lt;p&gt;由基本放缩：$lnx&amp;lt;x-1$ ,知：&lt;/p&gt;
+
+&lt;p&gt;$ln(\sqrt{\frac{\pi}{e}})&amp;lt;\sqrt{\frac{\pi}{e}}-1$&lt;/p&gt;
+
+&lt;p&gt;易然，命题成立。&lt;/p&gt;
+
+&lt;p&gt;思路已通，证明就不在话下了。&lt;/p&gt;</content><author><name></name></author><summary type="html">合理放缩</summary></entry><entry><title type="html">奔驰定理</title><link href="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html" rel="alternate" type="text/html" title="奔驰定理" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math</id><content type="html" xml:base="http://localhost:4000/%E5%90%91%E9%87%8F/2020/03/19/006.math.html">&lt;h2 id=&quot;从面积说起&quot;&gt;从面积说起&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;外心&lt;/li&gt;
@@ -316,82 +543,7 @@ z^{'}_y=2x\\
 
 &lt;blockquote&gt;
   &lt;script type=&quot;math/tex; mode=display&quot;&gt;tanA*\overrightarrow{PA}+tanB*\overrightarrow{PB}+tanC*\overrightarrow{PC}=\overrightarrow{0}&lt;/script&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">解三角形</summary></entry><entry><title type="html">脱水不等式</title><link href="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math.html" rel="alternate" type="text/html" title="脱水不等式" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math</id><content type="html" xml:base="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/005.math.html">&lt;blockquote&gt;
-
-  &lt;p&gt;$\forall C &amp;lt; Min\{M,N\}$. 如果 $\frac{M}{N} &amp;lt; 1,$ 恒有 $\frac{M}{N}&amp;gt;\frac{M-C}{N-C}$ 。 
-倘若：$\frac{M}{N} &amp;gt; 1,$ 则：$\frac{M}{N} &amp;lt; \frac{M-C}{N-C}$&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;简证：&lt;/p&gt;
-
-&lt;p&gt;$\frac{M}{N}-\frac{M-C}{N-C}=\frac{M(N-C)-N(M-C)}{N(N-C)}=\frac{C(N-M)}{N(N-C)}$&lt;/p&gt;
-
-&lt;p&gt;如果 $N&amp;gt;M,$ 则 $\frac{M}{N}&amp;gt;\frac{M-C}{N-C}$&lt;/p&gt;
-
-&lt;p&gt;如果 $N&amp;lt;M,$ 则 $\frac{M}{N}&amp;lt;\frac{M-C}{N-C}$&lt;/p&gt;
-
-&lt;p&gt;换言之：分子分母同时脱减相同的一个常数时，真分数越脱越小，假分数越脱越大。&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;示意图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/01.gif&quot; alt=&quot;01.gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;示意图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/02.gif&quot; alt=&quot;02.gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;（2020年度广州白云区3月阶段测练，第21题，理数）&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;求证：$e^{2(\sqrt{\pi}-\sqrt{e})} &amp;gt; (\frac{\pi+1}{e+1})^{\sqrt{e}}$&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;分析：&lt;/p&gt;
-
-&lt;p&gt;$\pi + 1 &amp;gt; e + 1 ,$ 由「脱水不等式」知 : 假分数越脱越大。&lt;/p&gt;
-
-&lt;p&gt;$(\frac{\pi+1}{e+1})^{\sqrt{e}}$  &amp;lt;  $(\frac{\pi}{e})^{\sqrt{e}}$&lt;/p&gt;
-
-&lt;p&gt;若能证明： $(\frac{\pi}{e})^{\sqrt{e}}$ &amp;lt; $e^{2(\sqrt{\pi}-\sqrt{e})}$ ①&lt;/p&gt;
-
-&lt;p&gt;即可通过不等式的传递性，证明命题：&lt;/p&gt;
-
-&lt;p&gt;$(\frac{\pi+1}{e+1})^{\sqrt{e}}$  &amp;lt;  $(\frac{\pi}{e})^{\sqrt{e}}$ &amp;lt; $e^{2(\sqrt{\pi}-\sqrt{e})}$&lt;/p&gt;
-
-&lt;p&gt;对 ① 两侧取对数：&lt;/p&gt;
-
-&lt;p&gt;$\sqrt{e}ln(\frac{\pi}{e})=2\sqrt{e}ln(\sqrt{\frac{\pi}{e}}) &amp;lt; 2(\sqrt{\pi}-\sqrt{e})=2\sqrt{e}(\sqrt{\frac{\pi}{e}}-1)$ ②&lt;/p&gt;
-
-&lt;p&gt;整理②：&lt;/p&gt;
-
-&lt;p&gt;$2\sqrt{e}ln(\sqrt{\frac{\pi}{e}}) &amp;lt; 2\sqrt{e}(\sqrt{\frac{\pi}{e}}-1)$&lt;/p&gt;
-
-&lt;p&gt;由基本放缩：$lnx&amp;lt;x-1$ ,知：&lt;/p&gt;
-
-&lt;p&gt;$ln(\sqrt{\frac{\pi}{e}})&amp;lt;\sqrt{\frac{\pi}{e}}-1$&lt;/p&gt;
-
-&lt;p&gt;易然，命题成立。&lt;/p&gt;
-
-&lt;p&gt;思路已通，证明就不在话下了。&lt;/p&gt;</content><author><name></name></author><summary type="html">合理放缩</summary></entry><entry><title type="html">数形结合</title><link href="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/004.math.html" rel="alternate" type="text/html" title="数形结合" /><published>2020-03-19T00:00:00+08:00</published><updated>2020-03-19T00:00:00+08:00</updated><id>http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/004.math</id><content type="html" xml:base="http://localhost:4000/%E5%87%BD%E6%95%B0/2020/03/19/004.math.html">&lt;p&gt;（《高妙热点透析》）&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;已知当且仅当 $x\in (a,b) \cup (c,d)    (b \leqslant c)$ 时，函数 $f(x)=2x^2+x+2$ 的图象在 $g(x)= | 2x+1 |+ |x-t | $ 图象的下方，则 $b-a+d-c$ 的最大值为：__.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;分析：&lt;/p&gt;
-
-&lt;p&gt;双绝对值串连处理是困难的，考虑整理不等式将含参项独立。&lt;/p&gt;
-
-&lt;p&gt;去掉二次函数这一侧的「绝对值符号」并画出图象是容易的，于是原题转化为分析何种情形之下，分段的二次函数图象将位于另一侧「绝对值函数」之下简单模型。&lt;/p&gt;
-
-&lt;p&gt;动态观察，易见题目中给出的  $x \in (a,b)   \cup (c,d)   (b \leqslant c)$ 是有其用意的，因为在左右移动绝对值函数时，它高于分段二次函数，除了如下图之外，其它时候区间都是连续的。&lt;/p&gt;
-
-&lt;p&gt;正面剖析题目时，不要急于立刻弄清楚所有的「题设条件」，它们的联系往往在一种或多种转化之后才是「显而易见」的。&lt;/p&gt;
-
-&lt;p&gt;搞崩学生的心态，是命题人的乐趣之一。&lt;/p&gt;
-
-&lt;p&gt;答案：不连续的区间「长度」之和，最多是 2.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;示意图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pics/hanshuo/2.gif&quot; alt=&quot;示意图&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">数形结合</summary></entry><entry><title type="html">可行域思想</title><link href="http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math.html" rel="alternate" type="text/html" title="可行域思想" /><published>2020-03-18T00:00:00+08:00</published><updated>2020-03-18T00:00:00+08:00</updated><id>http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math</id><content type="html" xml:base="http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math.html">&lt;p&gt;已知函数 $ f(x)=ax+\frac{b}{x}-2 $ 在 $ [1,3] $ 上满足 $ f(x)\geqslant0 $ 恒成立，求 $ 4a+b $ 的最小值。&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">解三角形</summary></entry><entry><title type="html">可行域思想</title><link href="http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math.html" rel="alternate" type="text/html" title="可行域思想" /><published>2020-03-18T00:00:00+08:00</published><updated>2020-03-18T00:00:00+08:00</updated><id>http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math</id><content type="html" xml:base="http://localhost:4000/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/2020/03/18/001.math.html">&lt;p&gt;已知函数 $ f(x)=ax+\frac{b}{x}-2 $ 在 $ [1,3] $ 上满足 $ f(x)\geqslant0 $ 恒成立，求 $ 4a+b $ 的最小值。&lt;/p&gt;
 
 &lt;p&gt;分析：类似题目，会找特殊验证 $ f(2)  \geqslant 0 \Rightarrow 2a + \frac{b}{2} -2 \geqslant 0 \Rightarrow 4a + b \geqslant 4 $ 只能算会做而已，要了解它的本质，就会对「不等式」有更深的认识。&lt;/p&gt;
 
