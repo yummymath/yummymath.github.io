@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-23T01:17:24+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">导数三角复合题</title><link href="http://localhost:4000/%E5%AF%BC%E6%95%B0/2020/04/22/010.math.html" rel="alternate" type="text/html" title="导数三角复合题" /><published>2020-04-22T00:00:00+08:00</published><updated>2020-04-22T00:00:00+08:00</updated><id>http://localhost:4000/%E5%AF%BC%E6%95%B0/2020/04/22/010.math</id><content type="html" xml:base="http://localhost:4000/%E5%AF%BC%E6%95%B0/2020/04/22/010.math.html">&lt;h4 id=&quot;超越函数&quot;&gt;超越函数&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-24T09:28:41+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">导数三角复合题</title><link href="http://localhost:4000/%E5%AF%BC%E6%95%B0/2020/04/22/010.math.html" rel="alternate" type="text/html" title="导数三角复合题" /><published>2020-04-22T00:00:00+08:00</published><updated>2020-04-22T00:00:00+08:00</updated><id>http://localhost:4000/%E5%AF%BC%E6%95%B0/2020/04/22/010.math</id><content type="html" xml:base="http://localhost:4000/%E5%AF%BC%E6%95%B0/2020/04/22/010.math.html">&lt;h4 id=&quot;超越函数&quot;&gt;超越函数&lt;/h4&gt;
 
 &lt;p&gt;超越函数的 &lt;strong&gt;可解析性&lt;/strong&gt; 是有限的。用实数工具对它们进行描述时，无非：&lt;/p&gt;
 
@@ -48,7 +48,7 @@
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{cases}
 f'(0)&amp;= 1 &gt; 0 \\
-f'(- \dfrac{\pi}{4})&amp;=-\dfrac{\sqrt{2}}{2}-\dfrac{a\pi}{2} &lt; 0\\
+f'(- \dfrac{\pi}{4})&amp;= \dfrac{\sqrt{2}}{2}-\dfrac{a\pi}{2} &lt; 0\\
 \end{cases} %]]&gt;&lt;/script&gt;
 
 &lt;p&gt;故知在 $(- \dfrac{\pi}{4} , 0)$ 上，存在着 $f’(x)$ 的唯一零点，设为 $x_0$ ，有如下：&lt;/p&gt;
